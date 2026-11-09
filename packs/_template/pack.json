@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "language": "xx",
+  "name": "Language name",
+  "version": 1,
+  "minGameVersion": "0.1",
+  "components": [
+    { "kind": "ui", "version": 1, "file": "ui.json" },
+    { "kind": "dialogue", "version": 1, "file": "dialogue.json" }
+  ]
+}

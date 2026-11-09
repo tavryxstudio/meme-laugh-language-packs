@@ -1,0 +1,9 @@
+{
+  "packLicense": "CC0-1.0",
+  "packLicenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "components": [
+    { "id": "xx.ui", "license": "CC0-1.0", "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/" },
+    { "id": "xx.dialogue", "license": "CC0-1.0", "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/" }
+  ],
+  "thirdParty": []
+}
