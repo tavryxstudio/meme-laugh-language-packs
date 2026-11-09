@@ -396,7 +396,7 @@
     },
     {
       "key": "settings.tabMusic",
-      "value": "Music"
+      "value": "Sounds"
     },
     {
       "key": "settings.tabNpc",
@@ -404,7 +404,7 @@
     },
     {
       "key": "settings.music",
-      "value": "Music"
+      "value": "Sounds"
     },
     {
       "key": "settings.musicVolume",
@@ -1621,6 +1621,14 @@
     {
       "key": "language.applied",
       "value": "The pack is installed and applied."
+    },
+    {
+      "key": "settings.narrationVolume",
+      "value": "Card narration voice"
+    },
+    {
+      "key": "game.npcHint",
+      "value": "T — talk to a bot"
     }
   ]
 }

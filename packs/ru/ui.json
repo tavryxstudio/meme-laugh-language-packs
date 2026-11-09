@@ -396,7 +396,7 @@
     },
     {
       "key": "settings.tabMusic",
-      "value": "Музыка"
+      "value": "Звуки"
     },
     {
       "key": "settings.tabNpc",
@@ -404,7 +404,7 @@
     },
     {
       "key": "settings.music",
-      "value": "Музыка"
+      "value": "Звуки"
     },
     {
       "key": "settings.musicVolume",
@@ -1621,6 +1621,14 @@
     {
       "key": "language.applied",
       "value": "Пак установлен и применён."
+    },
+    {
+      "key": "settings.narrationVolume",
+      "value": "Голос озвучки карточек"
+    },
+    {
+      "key": "game.npcHint",
+      "value": "T — поговорить с ботом"
     }
   ]
 }
