@@ -1,0 +1,20 @@
+CC0 1.0 Universal (CC0 1.0)
+Public Domain Dedication
+
+The language content in this repository (UI strings, dialogue lines, catalog metadata,
+and documentation) is dedicated to the public domain under the Creative Commons CC0 1.0
+Universal Public Domain Dedication.
+
+To the extent possible under law, the authors have waived all copyright and related or
+neighbouring rights to this work.
+
+You should have received a copy of the legal code along with this work. If not, see:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Third-party components remain under their own licences:
+
+- Vosk and Vosk models: Apache License 2.0
+  https://github.com/alphacep/vosk-api/blob/master/COPYING
+- Model downloads: https://alphacephei.com/vosk/models
+
+SPDX-License-Identifier: CC0-1.0

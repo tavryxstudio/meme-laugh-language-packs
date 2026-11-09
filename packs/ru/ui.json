@@ -1,0 +1,1626 @@
+{
+  "formatVersion": 1,
+  "language": "ru",
+  "strings": [
+    {
+      "key": "app.title",
+      "value": "MEME LAUGH"
+    },
+    {
+      "key": "app.subtitle",
+      "value": "Смех решает, кто победит"
+    },
+    {
+      "key": "app.menu",
+      "value": "Главное меню"
+    },
+    {
+      "key": "menu.play",
+      "value": "Играть"
+    },
+    {
+      "key": "menu.create",
+      "value": "Создать лобби"
+    },
+    {
+      "key": "menu.join",
+      "value": "Присоединиться по коду"
+    },
+    {
+      "key": "menu.wardrobe",
+      "value": "Гардероб"
+    },
+    {
+      "key": "menu.packs",
+      "value": "Паки"
+    },
+    {
+      "key": "menu.settings",
+      "value": "Настройки"
+    },
+    {
+      "key": "menu.quit",
+      "value": "Выход"
+    },
+    {
+      "key": "menu.footer",
+      "value": "Локальный билд · 3–8 игроков · микрофон по желанию"
+    },
+    {
+      "key": "common.back",
+      "value": "Назад"
+    },
+    {
+      "key": "common.close",
+      "value": "Закрыть"
+    },
+    {
+      "key": "common.apply",
+      "value": "Применить"
+    },
+    {
+      "key": "common.cancel",
+      "value": "Отмена"
+    },
+    {
+      "key": "common.delete",
+      "value": "Удалить"
+    },
+    {
+      "key": "common.yes",
+      "value": "Да"
+    },
+    {
+      "key": "common.no",
+      "value": "Нет"
+    },
+    {
+      "key": "common.on",
+      "value": "Вкл"
+    },
+    {
+      "key": "common.off",
+      "value": "Выкл"
+    },
+    {
+      "key": "common.next",
+      "value": "Далее"
+    },
+    {
+      "key": "common.start",
+      "value": "Начать игру"
+    },
+    {
+      "key": "common.add",
+      "value": "Добавить"
+    },
+    {
+      "key": "common.remove",
+      "value": "Убрать"
+    },
+    {
+      "key": "common.refresh",
+      "value": "Обновить"
+    },
+    {
+      "key": "common.openFolder",
+      "value": "Открыть папку"
+    },
+    {
+      "key": "common.seconds",
+      "value": "с"
+    },
+    {
+      "key": "common.pointsShort",
+      "value": "очк."
+    },
+    {
+      "key": "common.mic",
+      "value": "Микрофон"
+    },
+    {
+      "key": "common.micOn",
+      "value": "Микрофон активен"
+    },
+    {
+      "key": "common.micOff",
+      "value": "Микрофон выключен"
+    },
+    {
+      "key": "common.you",
+      "value": "Вы"
+    },
+    {
+      "key": "common.bot",
+      "value": "Бот"
+    },
+    {
+      "key": "common.player",
+      "value": "Игрок"
+    },
+    {
+      "key": "common.cards",
+      "value": "Карты"
+    },
+    {
+      "key": "common.stars",
+      "value": "Звёзды"
+    },
+    {
+      "key": "common.situations",
+      "value": "Ситуации"
+    },
+    {
+      "key": "common.pack",
+      "value": "Пак"
+    },
+    {
+      "key": "common.version",
+      "value": "Версия 0.1 · прототип"
+    },
+    {
+      "key": "lobby.title",
+      "value": "Лобби"
+    },
+    {
+      "key": "lobby.code",
+      "value": "Код комнаты"
+    },
+    {
+      "key": "lobby.players",
+      "value": "Игроки"
+    },
+    {
+      "key": "lobby.playerCount",
+      "value": "Игроков (включая вас)"
+    },
+    {
+      "key": "lobby.addBot",
+      "value": "Добавить бота"
+    },
+    {
+      "key": "lobby.start",
+      "value": "Начать игру"
+    },
+    {
+      "key": "lobby.needPlayers",
+      "value": "Нужно минимум 3 игрока"
+    },
+    {
+      "key": "lobby.ready",
+      "value": "Можно начинать — все за столом"
+    },
+    {
+      "key": "lobby.waitingPlayers",
+      "value": "Ожидание игроков: {0}/{1}. Пригласите по LAN или добавьте ботов.\nМожно подождать или нажать «Начать игру»."
+    },
+    {
+      "key": "lobby.waitingMin",
+      "value": "Ожидание игроков: {0}/{1}. Пригласите по LAN или добавьте ботов.\nНужно минимум 3 игрока."
+    },
+    {
+      "key": "lobby.offlineHint",
+      "value": "Игра с ботами. Чтобы ждать живых игроков, создайте LAN-игру."
+    },
+    {
+      "key": "lobby.calibrate",
+      "value": "Настроить микрофон"
+    },
+    {
+      "key": "lobby.micReady",
+      "value": "Микрофон готов"
+    },
+    {
+      "key": "lobby.noMic",
+      "value": "Без микрофона"
+    },
+    {
+      "key": "lobby.target",
+      "value": "Играем до"
+    },
+    {
+      "key": "lobby.autoTarget",
+      "value": "Авто"
+    },
+    {
+      "key": "lobby.autoTargetInfo",
+      "value": "Авто: {0} очк. — делим очки колоды на игроков"
+    },
+    {
+      "key": "lobby.pack",
+      "value": "Тематика"
+    },
+    {
+      "key": "lobby.memePack",
+      "value": "Пак мемов"
+    },
+    {
+      "key": "lobby.situationPack",
+      "value": "Пак ситуаций"
+    },
+    {
+      "key": "lobby.fromMemePack",
+      "value": "Из пака мемов"
+    },
+    {
+      "key": "lobby.change",
+      "value": "Сменить"
+    },
+    {
+      "key": "lobby.onlineHint",
+      "value": "Локальная игра с ботами. Для игры с живыми игроками создайте LAN-игру."
+    },
+    {
+      "key": "lobby.localRoom",
+      "value": "Локальная комната"
+    },
+    {
+      "key": "join.title",
+      "value": "Присоединиться"
+    },
+    {
+      "key": "join.code",
+      "value": "Введите код комнаты"
+    },
+    {
+      "key": "join.connect",
+      "value": "Подключиться"
+    },
+    {
+      "key": "join.offlineTitle",
+      "value": "Онлайн-режим ещё не подключён"
+    },
+    {
+      "key": "join.offlineText",
+      "value": "В этом прототипе доступна игра с ботами. Сетевой код комнаты заработает после подключения транспорта (Steam / LAN)."
+    },
+    {
+      "key": "settings.title",
+      "value": "Настройки"
+    },
+    {
+      "key": "settings.volume",
+      "value": "Общая громкость"
+    },
+    {
+      "key": "settings.language",
+      "value": "Язык"
+    },
+    {
+      "key": "settings.mic",
+      "value": "Использовать микрофон"
+    },
+    {
+      "key": "settings.micHint",
+      "value": "Звук не записывается и не покидает устройство. Наружу уходит только число громкости."
+    },
+    {
+      "key": "settings.calibrate",
+      "value": "Калибровка микрофона"
+    },
+    {
+      "key": "settings.webcam",
+      "value": "Веб-камера"
+    },
+    {
+      "key": "settings.webcamFail",
+      "value": "Веб-камера не найдена"
+    },
+    {
+      "key": "settings.voice",
+      "value": "Голосовой чат (LAN)"
+    },
+    {
+      "key": "settings.voiceHint",
+      "value": "Удерживайте V, чтобы говорить"
+    },
+    {
+      "key": "settings.voiceMode",
+      "value": "Режим голоса"
+    },
+    {
+      "key": "voice.modePush",
+      "value": "Удерживать"
+    },
+    {
+      "key": "voice.modeOpen",
+      "value": "Открытый"
+    },
+    {
+      "key": "voice.key",
+      "value": "Клавиша: {0}"
+    },
+    {
+      "key": "voice.pressKey",
+      "value": "Нажмите клавишу…"
+    },
+    {
+      "key": "voice.keyBound",
+      "value": "Клавиша голоса: {0}"
+    },
+    {
+      "key": "voice.hintPush",
+      "value": "Удерживайте {0}, чтобы говорить"
+    },
+    {
+      "key": "voice.hintOpen",
+      "value": "Микрофон передаётся постоянно"
+    },
+    {
+      "key": "key.space",
+      "value": "ПРОБЕЛ"
+    },
+    {
+      "key": "settings.mask",
+      "value": "Маска голоса"
+    },
+    {
+      "key": "mask.none",
+      "value": "Без маски"
+    },
+    {
+      "key": "mask.robot",
+      "value": "Робот"
+    },
+    {
+      "key": "mask.helium",
+      "value": "Гелий"
+    },
+    {
+      "key": "mask.monster",
+      "value": "Монстр"
+    },
+    {
+      "key": "settings.soon",
+      "value": "скоро"
+    },
+    {
+      "key": "settings.hud",
+      "value": "Показывать подсказки"
+    },
+    {
+      "key": "settings.autoContinue",
+      "value": "Автопродолжение раундов"
+    },
+    {
+      "key": "settings.reset",
+      "value": "Сбросить прогресс"
+    },
+    {
+      "key": "settings.tabGame",
+      "value": "Игра"
+    },
+    {
+      "key": "settings.tabDisplay",
+      "value": "Экран"
+    },
+    {
+      "key": "settings.tabMusic",
+      "value": "Музыка"
+    },
+    {
+      "key": "settings.tabNpc",
+      "value": "NPC"
+    },
+    {
+      "key": "settings.music",
+      "value": "Музыка"
+    },
+    {
+      "key": "settings.musicVolume",
+      "value": "Громкость музыки"
+    },
+    {
+      "key": "settings.musicPiano",
+      "value": "Пианино"
+    },
+    {
+      "key": "settings.musicBass",
+      "value": "Контрабас"
+    },
+    {
+      "key": "settings.musicDrums",
+      "value": "Барабаны"
+    },
+    {
+      "key": "settings.musicSax",
+      "value": "Саксофон"
+    },
+    {
+      "key": "settings.sfxVolume",
+      "value": "Звуки игры"
+    },
+    {
+      "key": "settings.musicHint",
+      "value": "Музыка автоматически приглушается во время видео, чтения ситуаций и разговоров в голосовом чате."
+    },
+    {
+      "key": "settings.display",
+      "value": "Экран"
+    },
+    {
+      "key": "settings.resolution",
+      "value": "Разрешение"
+    },
+    {
+      "key": "settings.aspect",
+      "value": "Соотношение сторон"
+    },
+    {
+      "key": "settings.mode",
+      "value": "Режим экрана"
+    },
+    {
+      "key": "settings.vsync",
+      "value": "Вертикальная синхронизация"
+    },
+    {
+      "key": "settings.modeFullscreen",
+      "value": "Полный экран"
+    },
+    {
+      "key": "settings.modeBorderless",
+      "value": "Без рамки"
+    },
+    {
+      "key": "settings.modeWindowed",
+      "value": "В окне"
+    },
+    {
+      "key": "settings.aspectAuto",
+      "value": "Авто"
+    },
+    {
+      "key": "settings.autoDetect",
+      "value": "Определить автоматически"
+    },
+    {
+      "key": "settings.autoApplied",
+      "value": "Настройки экрана подобраны автоматически"
+    },
+    {
+      "key": "settings.displayHint",
+      "value": "Изменения применяются сразу и сохраняются. В режиме «Без рамки» используется разрешение экрана."
+    },
+    {
+      "key": "profile.name",
+      "value": "Никнейм"
+    },
+    {
+      "key": "profile.namePlaceholder",
+      "value": "Ваше имя"
+    },
+    {
+      "key": "profile.photo",
+      "value": "Фото"
+    },
+    {
+      "key": "profile.clear",
+      "value": "Убрать"
+    },
+    {
+      "key": "profile.cropTitle",
+      "value": "Обрезать фото"
+    },
+    {
+      "key": "profile.cropHint",
+      "value": "Перетаскивайте фото, чтобы выбрать квадратную область."
+    },
+    {
+      "key": "profile.zoom",
+      "value": "Масштаб"
+    },
+    {
+      "key": "profile.photoFail",
+      "value": "Не удалось открыть фото"
+    },
+    {
+      "key": "profile.saved",
+      "value": "Фото сохранено"
+    },
+    {
+      "key": "profile.cleared",
+      "value": "Фото убрано"
+    },
+    {
+      "key": "wardrobe.title",
+      "value": "Гардероб"
+    },
+    {
+      "key": "wardrobe.cardBacks",
+      "value": "Рубашки карт"
+    },
+    {
+      "key": "wardrobe.outfit",
+      "value": "Образ"
+    },
+    {
+      "key": "wardrobe.saved",
+      "value": "Сохранено"
+    },
+    {
+      "key": "wardrobe.hint",
+      "value": "Косметика видна всем за столом и на ваших картах."
+    },
+    {
+      "key": "packs.title",
+      "value": "Паки мемов и ситуаций"
+    },
+    {
+      "key": "packs.enabled",
+      "value": "Включён"
+    },
+    {
+      "key": "packs.builtin",
+      "value": "Встроенный"
+    },
+    {
+      "key": "packs.user",
+      "value": "Пользовательский"
+    },
+    {
+      "key": "packs.preview",
+      "value": "Прокрутить ленту"
+    },
+    {
+      "key": "packs.importHint",
+      "value": "Свои паки кладите в папку Packs (откроется кнопкой ниже). Формат описан в README.txt."
+    },
+    {
+      "key": "packs.memes",
+      "value": "мемов"
+    },
+    {
+      "key": "packs.stats",
+      "value": "{0} мемов · {1} ситуаций · {2}"
+    },
+    {
+      "key": "packs.addImages",
+      "value": "Добавить картинку"
+    },
+    {
+      "key": "packs.scrollHint",
+      "value": "Прокрутите, чтобы подгрузить ещё"
+    },
+    {
+      "key": "packs.deleteTitle",
+      "value": "Удалить пак?"
+    },
+    {
+      "key": "packs.deleteBody",
+      "value": "Пак «{0}» будет удалён с диска вместе со всеми файлами. Это действие нельзя отменить."
+    },
+    {
+      "key": "packs.deleteMemeTitle",
+      "value": "Удалить картинку?"
+    },
+    {
+      "key": "packs.deleteMemeBody",
+      "value": "«{0}» будет удалена из пака и с диска. Это действие нельзя отменить."
+    },
+    {
+      "key": "packs.deleted",
+      "value": "Пак удалён"
+    },
+    {
+      "key": "packs.deleteFailed",
+      "value": "Не удалось удалить пак"
+    },
+    {
+      "key": "packs.memeDeleted",
+      "value": "Картинка удалена"
+    },
+    {
+      "key": "packs.memeDeleteFailed",
+      "value": "Не удалось удалить картинку"
+    },
+    {
+      "key": "packs.memeAdded",
+      "value": "Картинка добавлена"
+    },
+    {
+      "key": "packs.memeAddFailed",
+      "value": "Не удалось добавить картинку"
+    },
+    {
+      "key": "packs.pickTitle",
+      "value": "Добавить картинку"
+    },
+    {
+      "key": "packs.pickUp",
+      "value": "Вверх"
+    },
+    {
+      "key": "packs.pickEmpty",
+      "value": "Здесь нет картинок"
+    },
+    {
+      "key": "packs.pickNoAccess",
+      "value": "Нет доступа к папке"
+    },
+    {
+      "key": "packs.pickLimit",
+      "value": "Показаны первые {0} элементов"
+    },
+    {
+      "key": "calib.title",
+      "value": "Калибровка микрофона"
+    },
+    {
+      "key": "calib.instruction",
+      "value": "Сначала 2 секунды тишины, затем 3 секунды смейтесь в микрофон как можно громче.\nИгра запомнит и фон комнаты, и ваш смех."
+    },
+    {
+      "key": "calib.start",
+      "value": "Начать калибровку"
+    },
+    {
+      "key": "calib.skip",
+      "value": "Играть без микрофона"
+    },
+    {
+      "key": "calib.done",
+      "value": "Готово! Фон: {0}, смех: {1}"
+    },
+    {
+      "key": "calib.fail",
+      "value": "Не удалось открыть микрофон"
+    },
+    {
+      "key": "calib.privacy",
+      "value": "Микрофон используется только для замера громкости в реальном времени. Звук не записывается и не передаётся."
+    },
+    {
+      "key": "calib.level",
+      "value": "Уровень"
+    },
+    {
+      "key": "calib.listening",
+      "value": "Слушаем тишину…"
+    },
+    {
+      "key": "calib.laughNow",
+      "value": "Теперь смейтесь в микрофон!"
+    },
+    {
+      "key": "calib.floor",
+      "value": "Шум комнаты"
+    },
+    {
+      "key": "calib.redo",
+      "value": "Калибровать заново"
+    },
+    {
+      "key": "game.round",
+      "value": "Раунд {0}"
+    },
+    {
+      "key": "game.situation",
+      "value": "Ситуация"
+    },
+    {
+      "key": "game.choose",
+      "value": "Выберите мем"
+    },
+    {
+      "key": "game.listen",
+      "value": "Слушайте ситуацию…"
+    },
+    {
+      "key": "game.chosen",
+      "value": "Карта выбрана · можно поменять"
+    },
+    {
+      "key": "game.chooseHint",
+      "value": "Наведите на карту, чтобы поднять её. Клик — сыграть. ПКМ — осмотреться, Q/E — поворот."
+    },
+    {
+      "key": "game.waiting",
+      "value": "Ждём остальных…"
+    },
+    {
+      "key": "game.timeLeft",
+      "value": "Осталось {0} с"
+    },
+    {
+      "key": "game.reveal",
+      "value": "Анонимный показ"
+    },
+    {
+      "key": "game.memeOf",
+      "value": "Мем {0} из {1}"
+    },
+    {
+      "key": "game.authorHidden",
+      "value": "Автор скрыт"
+    },
+    {
+      "key": "game.laughMeter",
+      "value": "Смех комнаты"
+    },
+    {
+      "key": "game.vote",
+      "value": "Голосование"
+    },
+    {
+      "key": "game.voteHint",
+      "value": "Выберите чужой мем. За свой голосовать нельзя."
+    },
+    {
+      "key": "game.ownCard",
+      "value": "Ваш мем"
+    },
+    {
+      "key": "game.votes",
+      "value": "{0} гол."
+    },
+    {
+      "key": "game.voteChosen",
+      "value": "Голос принят · можно поменять"
+    },
+    {
+      "key": "game.noVotes",
+      "value": "Голосов нет"
+    },
+    {
+      "key": "game.results",
+      "value": "Итоги раунда"
+    },
+    {
+      "key": "game.progress",
+      "value": "Прогресс до победы"
+    },
+    {
+      "key": "game.bonusLaugh",
+      "value": "Бонус за смех"
+    },
+    {
+      "key": "game.voteWinner",
+      "value": "Победа голосованием"
+    },
+    {
+      "key": "game.starWinner",
+      "value": "Звезда смеха"
+    },
+    {
+      "key": "game.badgeVote",
+      "value": "ПОБЕДА"
+    },
+    {
+      "key": "game.badgeStar",
+      "value": "СМЕХ"
+    },
+    {
+      "key": "game.noWinner",
+      "value": "Никто"
+    },
+    {
+      "key": "game.tie",
+      "value": "Ничья"
+    },
+    {
+      "key": "game.loudest",
+      "value": "Самый громкий мем"
+    },
+    {
+      "key": "game.nextRound",
+      "value": "Следующий раунд"
+    },
+    {
+      "key": "game.final",
+      "value": "Финал"
+    },
+    {
+      "key": "game.winner",
+      "value": "{0} побеждает!"
+    },
+    {
+      "key": "game.ranking",
+      "value": "Таблица"
+    },
+    {
+      "key": "game.playAgain",
+      "value": "Играть снова"
+    },
+    {
+      "key": "game.toMenu",
+      "value": "В меню"
+    },
+    {
+      "key": "game.suddenDeath",
+      "value": "Внезапный раунд"
+    },
+    {
+      "key": "game.toFinal",
+      "value": "К финалу"
+    },
+    {
+      "key": "game.suddenDeathInfo",
+      "value": "Только голосование. Без децибел."
+    },
+    {
+      "key": "game.paused",
+      "value": "Пауза"
+    },
+    {
+      "key": "game.resume",
+      "value": "Продолжить"
+    },
+    {
+      "key": "game.leave",
+      "value": "Выйти в меню"
+    },
+    {
+      "key": "game.leaveConfirm",
+      "value": "Выйти из игры? Прогресс раунда потеряется."
+    },
+    {
+      "key": "game.pauseOnline",
+      "value": "Сетевая игра продолжается — пауза недоступна. Можно зайти в настройки или выйти в меню."
+    },
+    {
+      "key": "game.voiceMix",
+      "value": "Голос игроков"
+    },
+    {
+      "key": "game.voiceMixEmpty",
+      "value": "Нет других игроков"
+    },
+    {
+      "key": "game.micOverloaded",
+      "value": "Микрофон перегружен"
+    },
+    {
+      "key": "game.botThinking",
+      "value": "{0} думает…"
+    },
+    {
+      "key": "game.autoNext",
+      "value": "Дальше через {0} с"
+    },
+    {
+      "key": "game.waitingHost",
+      "value": "Ждём хоста…"
+    },
+    {
+      "key": "game.target",
+      "value": "Цель: {0} очк."
+    },
+    {
+      "key": "game.deckLeft",
+      "value": "Ситуаций осталось: {0}"
+    },
+    {
+      "key": "game.cardsLeft",
+      "value": "Мемов в колоде: {0}"
+    },
+    {
+      "key": "game.you",
+      "value": "Вы"
+    },
+    {
+      "key": "game.voicePush",
+      "value": "{0} · говорить"
+    },
+    {
+      "key": "game.voiceOpen",
+      "value": "МИКРОФОН ОТКРЫТ"
+    },
+    {
+      "key": "game.voiceTalking",
+      "value": "● ГОВОРИТЕ"
+    },
+    {
+      "key": "game.webcam",
+      "value": "ВЕБ"
+    },
+    {
+      "key": "game.webcamOff",
+      "value": "ВЕБ ВЫКЛ"
+    },
+    {
+      "key": "net.hostFailed",
+      "value": "Не удалось запустить сервер"
+    },
+    {
+      "key": "net.needAddress",
+      "value": "Введите IP-адрес хоста"
+    },
+    {
+      "key": "net.connecting",
+      "value": "Подключение к хосту…"
+    },
+    {
+      "key": "net.connected",
+      "value": "Подключено"
+    },
+    {
+      "key": "net.hostClosed",
+      "value": "Хост закрыл игру"
+    },
+    {
+      "key": "net.disconnected",
+      "value": "Соединение потеряно"
+    },
+    {
+      "key": "net.matchInProgress",
+      "value": "Игра уже идёт"
+    },
+    {
+      "key": "net.lobbyFull",
+      "value": "Лобби заполнено"
+    },
+    {
+      "key": "net.playerLeftMatch",
+      "value": "Игрок отключился — матч остановлен"
+    },
+    {
+      "key": "net.playerBecameBot",
+      "value": "Игрок {0} отключился — вместо него играет бот"
+    },
+    {
+      "key": "net.hostNotRunning",
+      "value": "LAN-сервер не запущен"
+    },
+    {
+      "key": "net.rematchRequested",
+      "value": "Запрос на новую игру отправлен"
+    },
+    {
+      "key": "net.noPauseOnline",
+      "value": "В сетевой игре пауза недоступна"
+    },
+    {
+      "key": "net.lanHost",
+      "value": "LAN: создать игру"
+    },
+    {
+      "key": "net.lanJoin",
+      "value": "LAN: подключиться"
+    },
+    {
+      "key": "net.hostIp",
+      "value": "IP хоста"
+    },
+    {
+      "key": "net.port",
+      "value": "Порт"
+    },
+    {
+      "key": "net.joinHint",
+      "value": "Запустите игру у друга, создайте LAN-игру и введите его IP из Radmin VPN."
+    },
+    {
+      "key": "net.hostLobby",
+      "value": "LAN-лобби · вы хост"
+    },
+    {
+      "key": "net.clientLobby",
+      "value": "LAN-лобби · вы подключены к хосту"
+    },
+    {
+      "key": "net.youHost",
+      "value": "Хост"
+    },
+    {
+      "key": "net.youClient",
+      "value": "Клиент"
+    },
+    {
+      "key": "net.waitingHost",
+      "value": "Ждём хоста…"
+    },
+    {
+      "key": "net.connectInfo",
+      "value": "Подключение: {0}:{1}"
+    },
+    {
+      "key": "net.localIps",
+      "value": "IP: {0}"
+    },
+    {
+      "key": "lobby.changePack",
+      "value": "Сменить пак"
+    },
+    {
+      "key": "pack.ready",
+      "value": "Пак готов"
+    },
+    {
+      "key": "pack.downloading",
+      "value": "Скачивание пака"
+    },
+    {
+      "key": "pack.waitClients",
+      "value": "Ожидание загрузки пака у клиентов"
+    },
+    {
+      "key": "pack.serverFail",
+      "value": "Не удалось запустить сервер паков (порт занят)"
+    },
+    {
+      "key": "pack.lockAfterJoin",
+      "value": "Пак нельзя менять после подключения игроков"
+    },
+    {
+      "key": "pack.noServer",
+      "value": "Хост не раздаёт пак"
+    },
+    {
+      "key": "pack.badChecksum",
+      "value": "Ошибка контрольной суммы пака"
+    },
+    {
+      "key": "pack.missingAfterDownload",
+      "value": "Пак не найден после загрузки"
+    },
+    {
+      "key": "pack.downloadFail",
+      "value": "Не удалось скачать пак"
+    },
+    {
+      "key": "toast.micOff",
+      "value": "Микрофон выключен"
+    },
+    {
+      "key": "toast.micOn",
+      "value": "Микрофон включён"
+    },
+    {
+      "key": "toast.micFailed",
+      "value": "Микрофон не найден"
+    },
+    {
+      "key": "toast.micCalibrated",
+      "value": "Калибровка сохранена"
+    },
+    {
+      "key": "toast.webcamOn",
+      "value": "Веб-камера включена"
+    },
+    {
+      "key": "toast.webcamOff",
+      "value": "Веб-камера выключена"
+    },
+    {
+      "key": "toast.webcamOnlineOnly",
+      "value": "Веб-камера работает только в сетевой игре"
+    },
+    {
+      "key": "toast.saved",
+      "value": "Сохранено"
+    },
+    {
+      "key": "toast.needPlayers",
+      "value": "Нужно минимум 3 игрока"
+    },
+    {
+      "key": "toast.packReloaded",
+      "value": "Паки перечитаны"
+    },
+    {
+      "key": "toast.packEmpty",
+      "value": "В выбранном паке нет мемов"
+    },
+    {
+      "key": "toast.online",
+      "value": "Онлайн-режим ещё не подключён"
+    },
+    {
+      "key": "toast.micDenied",
+      "value": "Разрешите доступ к микрофону"
+    },
+    {
+      "key": "toast.copied",
+      "value": "Код скопирован"
+    },
+    {
+      "key": "cat.work",
+      "value": "Работа"
+    },
+    {
+      "key": "cat.study",
+      "value": "Учёба"
+    },
+    {
+      "key": "cat.family",
+      "value": "Семья"
+    },
+    {
+      "key": "cat.friends",
+      "value": "Друзья"
+    },
+    {
+      "key": "cat.love",
+      "value": "Отношения"
+    },
+    {
+      "key": "cat.money",
+      "value": "Деньги"
+    },
+    {
+      "key": "cat.tech",
+      "value": "Технологии"
+    },
+    {
+      "key": "cat.food",
+      "value": "Еда"
+    },
+    {
+      "key": "cat.transport",
+      "value": "Транспорт"
+    },
+    {
+      "key": "cat.absurd",
+      "value": "Абсурд"
+    },
+    {
+      "key": "cat.funny_faces",
+      "value": "Смешные лица"
+    },
+    {
+      "key": "cat.reactions",
+      "value": "Реакции"
+    },
+    {
+      "key": "cat.animals",
+      "value": "Животные"
+    },
+    {
+      "key": "cat.vintage",
+      "value": "Винтаж"
+    },
+    {
+      "key": "cat.historical",
+      "value": "История"
+    },
+    {
+      "key": "cat.advertisements",
+      "value": "Реклама"
+    },
+    {
+      "key": "cat.people",
+      "value": "Люди"
+    },
+    {
+      "key": "cat.dance_and_movement",
+      "value": "Танец и движение"
+    },
+    {
+      "key": "cat.unexpected_moments",
+      "value": "Неожиданности"
+    },
+    {
+      "key": "cat.classic_comedy",
+      "value": "Классическая комедия"
+    },
+    {
+      "key": "cat.work_and_daily_life",
+      "value": "Быт и работа"
+    },
+    {
+      "key": "cat.sports_and_activities",
+      "value": "Спорт"
+    },
+    {
+      "key": "cat.food_and_cooking",
+      "value": "Еда и готовка"
+    },
+    {
+      "key": "cat.family_friendly",
+      "value": "Для всей семьи"
+    },
+    {
+      "key": "outfit.tux",
+      "value": "Смокинг"
+    },
+    {
+      "key": "outfit.hawaii",
+      "value": "Гавайи"
+    },
+    {
+      "key": "outfit.grey",
+      "value": "Серый"
+    },
+    {
+      "key": "outfit.white",
+      "value": "Белый"
+    },
+    {
+      "key": "outfit.stealth",
+      "value": "Стелс"
+    },
+    {
+      "key": "npc.chat.header",
+      "value": "РЕПЛИКИ NPC"
+    },
+    {
+      "key": "npc.settings.title",
+      "value": "Персонажи и диалоги"
+    },
+    {
+      "key": "npc.settings.dialogues",
+      "value": "Разговоры NPC"
+    },
+    {
+      "key": "npc.settings.dialoguesHint",
+      "value": "Реплики появляются облачками рядом с персонажами. Работает без интернета."
+    },
+    {
+      "key": "npc.settings.bubbles",
+      "value": "Облачка реплик"
+    },
+    {
+      "key": "npc.settings.bubblesHint",
+      "value": "Облачко появляется рядом с говорящим и исчезает само."
+    },
+    {
+      "key": "npc.settings.voice",
+      "value": "Озвучка NPC"
+    },
+    {
+      "key": "npc.settings.voiceHint",
+      "value": "По умолчанию выключена. Модели Piper/Vosk не входят в игру и скачиваются отдельно."
+    },
+    {
+      "key": "npc.settings.voiceMode",
+      "value": "Раскладка голосов"
+    },
+    {
+      "key": "npc.voice.economy",
+      "value": "Экономная · 1 голос"
+    },
+    {
+      "key": "npc.voice.balanced",
+      "value": "Сбалансированная · 2–3 голоса"
+    },
+    {
+      "key": "npc.voice.extended",
+      "value": "Расширенная · до 7 голосов"
+    },
+    {
+      "key": "npc.settings.stt",
+      "value": "Голосовой ввод (Vosk)"
+    },
+    {
+      "key": "npc.settings.sttHint",
+      "value": "Удерживайте {0} в игре и говорите. Нужны движок Vosk и модель для языка."
+    },
+    {
+      "key": "npc.settings.sttModel",
+      "value": "Модель распознавания"
+    },
+    {
+      "key": "npc.settings.sttDownload",
+      "value": "Скачать Vosk для {0}"
+    },
+    {
+      "key": "npc.settings.sttDownloading",
+      "value": "Загрузка Vosk…"
+    },
+    {
+      "key": "npc.settings.sttInstalled",
+      "value": "Vosk готов"
+    },
+    {
+      "key": "npc.settings.sttUnavailable",
+      "value": "Для этого языка модели пока нет"
+    },
+    {
+      "key": "npc.settings.sttRuntime",
+      "value": "Движок Vosk"
+    },
+    {
+      "key": "npc.settings.sttRuntimeSize",
+      "value": "Движок ~15 МБ · модель ~45 МБ"
+    },
+    {
+      "key": "npc.settings.sttLicense",
+      "value": "Vosk и модели: Apache-2.0"
+    },
+    {
+      "key": "npc.stt.disabled",
+      "value": "Голосовой ввод выключен"
+    },
+    {
+      "key": "npc.stt.needModel",
+      "value": "Модель Vosk не установлена"
+    },
+    {
+      "key": "npc.stt.loading",
+      "value": "Загрузка модели Vosk…"
+    },
+    {
+      "key": "npc.stt.error",
+      "value": "Ошибка Vosk"
+    },
+    {
+      "key": "npc.stt.ready",
+      "value": "Готово · удерживайте {0}"
+    },
+    {
+      "key": "npc.stt.listening",
+      "value": "Слушаю… отпустите {0}"
+    },
+    {
+      "key": "npc.stt.listeningShort",
+      "value": "Слушаю…"
+    },
+    {
+      "key": "npc.stt.notHeard",
+      "value": "Не расслышал(а). Попробуйте ещё раз."
+    },
+    {
+      "key": "npc.stt.heard",
+      "value": "Вы: {0}"
+    },
+    {
+      "key": "npc.stt.tooShort",
+      "value": "Подержите клавишу чуть дольше."
+    },
+    {
+      "key": "npc.stt.processing",
+      "value": "Распознаю…"
+    },
+    {
+      "key": "npc.stt.modelRu",
+      "value": "Русский"
+    },
+    {
+      "key": "npc.stt.modelEn",
+      "value": "Английский"
+    },
+    {
+      "key": "npc.settings.models",
+      "value": "Языковые пакеты и модели"
+    },
+    {
+      "key": "npc.settings.modelsHint",
+      "value": "Модели хранятся отдельно от игры, в пользовательской папке. Основная игра работает без них."
+    },
+    {
+      "key": "npc.settings.openFolder",
+      "value": "Открыть папку моделей"
+    },
+    {
+      "key": "npc.settings.languagePack",
+      "value": "Язык диалогов"
+    },
+    {
+      "key": "npc.settings.fallback",
+      "value": "Пак не найден — используется {0}"
+    },
+    {
+      "key": "npc.settings.installed",
+      "value": "Установлено"
+    },
+    {
+      "key": "npc.settings.notInstalled",
+      "value": "Не установлено"
+    },
+    {
+      "key": "npc.settings.download",
+      "value": "Скачать"
+    },
+    {
+      "key": "npc.settings.cancel",
+      "value": "Отменить"
+    },
+    {
+      "key": "npc.settings.verify",
+      "value": "Проверить"
+    },
+    {
+      "key": "npc.settings.remove",
+      "value": "Удалить"
+    },
+    {
+      "key": "npc.settings.freeSpace",
+      "value": "Свободно на диске: {0}"
+    },
+    {
+      "key": "npc.settings.noPackages",
+      "value": "В каталоге пока нет дополнительных моделей.\nИгра полностью играбельна без них."
+    },
+    {
+      "key": "npc.settings.license",
+      "value": "Лицензия: {0}"
+    },
+    {
+      "key": "npc.models.missing",
+      "value": "Пакет не найден."
+    },
+    {
+      "key": "npc.models.notInstalled",
+      "value": "Не установлено."
+    },
+    {
+      "key": "npc.models.broken",
+      "value": "Файлы выглядят неполными. Скачайте заново."
+    },
+    {
+      "key": "npc.models.verified",
+      "value": "Файлы проверены."
+    },
+    {
+      "key": "npc.models.cancelling",
+      "value": "Отмена…"
+    },
+    {
+      "key": "npc.models.noCatalog",
+      "value": "Этого пакета пока нет в каталоге."
+    },
+    {
+      "key": "npc.models.noSpace",
+      "value": "Недостаточно свободного места на диске."
+    },
+    {
+      "key": "npc.models.downloading",
+      "value": "Скачивание…"
+    },
+    {
+      "key": "npc.models.failed",
+      "value": "Не удалось скачать."
+    },
+    {
+      "key": "npc.models.cancelled",
+      "value": "Скачивание отменено."
+    },
+    {
+      "key": "npc.models.verifying",
+      "value": "Проверка контрольной суммы…"
+    },
+    {
+      "key": "npc.models.checksum",
+      "value": "Контрольная сумма не совпала. Архив удалён, попробуйте снова."
+    },
+    {
+      "key": "npc.models.installing",
+      "value": "Установка…"
+    },
+    {
+      "key": "npc.models.badArchive",
+      "value": "Архив повреждён или не поддерживается."
+    },
+    {
+      "key": "npc.models.installed",
+      "value": "Установлено."
+    },
+    {
+      "key": "npc.models.busy",
+      "value": "Уже идёт другая загрузка."
+    },
+    {
+      "key": "npc.models.kind.piper",
+      "value": "Голос Piper"
+    },
+    {
+      "key": "npc.models.kind.vosk",
+      "value": "Распознавание Vosk"
+    },
+    {
+      "key": "npc.models.kind.voskRuntime",
+      "value": "Движок Vosk"
+    },
+    {
+      "key": "npc.models.kind.other",
+      "value": "Пакет"
+    },
+    {
+      "key": "npc.toast.saved",
+      "value": "Настройки NPC сохранены"
+    },
+    {
+      "key": "settings.tabLanguage",
+      "value": "Язык"
+    },
+    {
+      "key": "language.title",
+      "value": "Языковые пакеты"
+    },
+    {
+      "key": "language.hint",
+      "value": "Выберите язык — интерфейс и диалоги скачаются автоматически. Без интернета игра остаётся на английском."
+    },
+    {
+      "key": "language.current",
+      "value": "Текущий"
+    },
+    {
+      "key": "language.builtIn",
+      "value": "Встроенный"
+    },
+    {
+      "key": "language.installed",
+      "value": "Установлен"
+    },
+    {
+      "key": "language.notInstalled",
+      "value": "Не установлен"
+    },
+    {
+      "key": "language.available",
+      "value": "Доступен"
+    },
+    {
+      "key": "language.unavailable",
+      "value": "Пока недоступен"
+    },
+    {
+      "key": "language.use",
+      "value": "Применить"
+    },
+    {
+      "key": "language.download",
+      "value": "Скачать"
+    },
+    {
+      "key": "language.downloading",
+      "value": "Скачивание…"
+    },
+    {
+      "key": "language.cancel",
+      "value": "Отмена"
+    },
+    {
+      "key": "language.retry",
+      "value": "Повторить"
+    },
+    {
+      "key": "language.checking",
+      "value": "Проверяем каталог…"
+    },
+    {
+      "key": "language.offline",
+      "value": "Каталог недоступен. Установленные языки работают, новые скачать нельзя."
+    },
+    {
+      "key": "language.error",
+      "value": "Не удалось скачать языковой пакет."
+    },
+    {
+      "key": "language.done",
+      "value": "Язык применён."
+    },
+    {
+      "key": "language.gameTooOld",
+      "value": "Этот пакет требует более новую версию игры."
+    },
+    {
+      "key": "language.update",
+      "value": "Обновить"
+    },
+    {
+      "key": "language.size",
+      "value": "Размер: {0}"
+    },
+    {
+      "key": "language.sttReady",
+      "value": "Модель распознавания установлена."
+    },
+    {
+      "key": "language.sttMissing",
+      "value": "Модель распознавания не установлена."
+    },
+    {
+      "key": "language.sttDownload",
+      "value": "Скачать модель распознавания"
+    },
+    {
+      "key": "language.sttAuto",
+      "value": "Скачается автоматически при включённом голосовом вводе."
+    },
+    {
+      "key": "language.noComponents",
+      "value": "В каталоге пока нет компонентов для этого языка."
+    },
+    {
+      "key": "language.delete",
+      "value": "Удалить пак"
+    },
+    {
+      "key": "language.applied",
+      "value": "Пак установлен и применён."
+    }
+  ]
+}

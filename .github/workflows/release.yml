@@ -1,0 +1,41 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "lang-v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install jsonschema
+      - name: Validate
+        run: python tools/validate_catalog.py
+      - name: Build ZIPs and update catalog
+        run: python tools/build_release.py --tag "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY"
+      - name: Publish GitHub Release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create "$GITHUB_REF_NAME" dist/*.zip dist/release-manifest.json --generate-notes --title "Language packs $GITHUB_REF_NAME"
+      - name: Commit updated catalog.json
+        run: |
+          git config user.name "language-pack-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add catalog.json
+          if git diff --cached --quiet; then
+            echo "catalog.json unchanged"
+          else
+            git commit -m "Update catalog for $GITHUB_REF_NAME"
+            git push origin HEAD:main
+          fi

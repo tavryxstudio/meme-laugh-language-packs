@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026.11.1",
+  "minGameVersion": "0.1",
+  "languages": [
+    {
+      "code": "ru",
+      "name": "Русский",
+      "status": "complete",
+      "builtIn": false,
+      "components": [
+        {
+          "id": "ru.ui",
+          "kind": "ui",
+          "language": "ru",
+          "version": 1,
+          "builtIn": false,
+          "url": "https://github.com/meme-laugh/meme-laugh-language-packs/releases/download/lang-v2026.11.1/ru-ui-v1.zip",
+          "sha256": "6622d915617ce3d3e34271b8c7df5a582beeff7e37124c6ae4bec416e6309bf5",
+          "sizeBytes": 8048,
+          "minGameVersion": "0.1",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "dependencies": [],
+          "installSubfolder": "ui"
+        },
+        {
+          "id": "ru.dialogue",
+          "kind": "dialogue",
+          "language": "ru",
+          "version": 1,
+          "builtIn": false,
+          "url": "https://github.com/meme-laugh/meme-laugh-language-packs/releases/download/lang-v2026.11.1/ru-dialogue-v1.zip",
+          "sha256": "0297bd02d6c9e5976e483d9995105dd65b3bd9fa35259e4afd6b35df9a3bac17",
+          "sizeBytes": 6379,
+          "minGameVersion": "0.1",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "dependencies": [],
+          "installSubfolder": "dialogue"
+        },
+        {
+          "id": "vosk.ru.small",
+          "kind": "stt-model",
+          "language": "ru",
+          "version": 1,
+          "builtIn": false,
+          "optional": true,
+          "url": "https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip",
+          "sha256": "961d5ff98a17f4aa6de69864d0aa71fa5bac682301d2b5d17a3f24c5c99a46d4",
+          "sizeBytes": 46236750,
+          "minGameVersion": "0.1",
+          "license": "Apache-2.0",
+          "licenseUrl": "https://alphacephei.com/vosk/models",
+          "dependencies": [
+            "vosk.runtime.win64"
+          ],
+          "installSubfolder": "stt-model"
+        }
+      ]
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "status": "complete",
+      "builtIn": true,
+      "components": [
+        {
+          "id": "en.ui",
+          "kind": "ui",
+          "language": "en",
+          "version": 1,
+          "builtIn": true,
+          "url": "",
+          "sha256": "",
+          "sizeBytes": 0,
+          "minGameVersion": "0.1",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "dependencies": [],
+          "installSubfolder": "ui"
+        },
+        {
+          "id": "en.dialogue",
+          "kind": "dialogue",
+          "language": "en",
+          "version": 1,
+          "builtIn": true,
+          "url": "",
+          "sha256": "",
+          "sizeBytes": 0,
+          "minGameVersion": "0.1",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "dependencies": [],
+          "installSubfolder": "dialogue"
+        },
+        {
+          "id": "vosk.en.small",
+          "kind": "stt-model",
+          "language": "en",
+          "version": 1,
+          "builtIn": false,
+          "optional": true,
+          "url": "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip",
+          "sha256": "30f26242c4eb449f948e42cb302dd7a686cb29a3423a8367f99ff41780942498",
+          "sizeBytes": 41205931,
+          "minGameVersion": "0.1",
+          "license": "Apache-2.0",
+          "licenseUrl": "https://alphacephei.com/vosk/models",
+          "dependencies": [
+            "vosk.runtime.win64"
+          ],
+          "installSubfolder": "stt-model"
+        }
+      ]
+    },
+    {
+      "code": "uk",
+      "name": "Українська",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "es",
+      "name": "Español",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "it",
+      "name": "Italiano",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "pt",
+      "name": "Português",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "pl",
+      "name": "Polski",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "tr",
+      "name": "Türkçe",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "cs",
+      "name": "Čeština",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    },
+    {
+      "code": "nl",
+      "name": "Nederlands",
+      "status": "missing",
+      "builtIn": false,
+      "components": []
+    }
+  ],
+  "engines": [
+    {
+      "id": "vosk.runtime.win64",
+      "kind": "stt-runtime",
+      "language": "any",
+      "version": 1,
+      "builtIn": false,
+      "optional": true,
+      "url": "https://github.com/alphacep/vosk-api/releases/download/v0.3.45/vosk-win64-0.3.45.zip",
+      "sha256": "f1dcc9cca460630f81ea8f71794f69c80bed6556d2a4e6237b5785e1d2dff34b",
+      "sizeBytes": 14882445,
+      "minGameVersion": "0.1",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://github.com/alphacep/vosk-api/blob/master/COPYING",
+      "dependencies": [],
+      "installSubfolder": "stt-runtime"
+    }
+  ]
+}

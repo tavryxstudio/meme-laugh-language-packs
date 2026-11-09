@@ -1,0 +1,1626 @@
+{
+  "formatVersion": 1,
+  "language": "en",
+  "strings": [
+    {
+      "key": "app.title",
+      "value": "MEME LAUGH"
+    },
+    {
+      "key": "app.subtitle",
+      "value": "Laughter decides the winner"
+    },
+    {
+      "key": "app.menu",
+      "value": "Main menu"
+    },
+    {
+      "key": "menu.play",
+      "value": "Play"
+    },
+    {
+      "key": "menu.create",
+      "value": "Create lobby"
+    },
+    {
+      "key": "menu.join",
+      "value": "Join by code"
+    },
+    {
+      "key": "menu.wardrobe",
+      "value": "Wardrobe"
+    },
+    {
+      "key": "menu.packs",
+      "value": "Packs"
+    },
+    {
+      "key": "menu.settings",
+      "value": "Settings"
+    },
+    {
+      "key": "menu.quit",
+      "value": "Quit"
+    },
+    {
+      "key": "menu.footer",
+      "value": "Local build · 3–8 players · mic optional"
+    },
+    {
+      "key": "common.back",
+      "value": "Back"
+    },
+    {
+      "key": "common.close",
+      "value": "Close"
+    },
+    {
+      "key": "common.apply",
+      "value": "Apply"
+    },
+    {
+      "key": "common.cancel",
+      "value": "Cancel"
+    },
+    {
+      "key": "common.delete",
+      "value": "Delete"
+    },
+    {
+      "key": "common.yes",
+      "value": "Yes"
+    },
+    {
+      "key": "common.no",
+      "value": "No"
+    },
+    {
+      "key": "common.on",
+      "value": "On"
+    },
+    {
+      "key": "common.off",
+      "value": "Off"
+    },
+    {
+      "key": "common.next",
+      "value": "Next"
+    },
+    {
+      "key": "common.start",
+      "value": "Start game"
+    },
+    {
+      "key": "common.add",
+      "value": "Add"
+    },
+    {
+      "key": "common.remove",
+      "value": "Remove"
+    },
+    {
+      "key": "common.refresh",
+      "value": "Refresh"
+    },
+    {
+      "key": "common.openFolder",
+      "value": "Open folder"
+    },
+    {
+      "key": "common.seconds",
+      "value": "s"
+    },
+    {
+      "key": "common.pointsShort",
+      "value": "pts"
+    },
+    {
+      "key": "common.mic",
+      "value": "Microphone"
+    },
+    {
+      "key": "common.micOn",
+      "value": "Mic active"
+    },
+    {
+      "key": "common.micOff",
+      "value": "Mic off"
+    },
+    {
+      "key": "common.you",
+      "value": "You"
+    },
+    {
+      "key": "common.bot",
+      "value": "Bot"
+    },
+    {
+      "key": "common.player",
+      "value": "Player"
+    },
+    {
+      "key": "common.cards",
+      "value": "Cards"
+    },
+    {
+      "key": "common.stars",
+      "value": "Stars"
+    },
+    {
+      "key": "common.situations",
+      "value": "Situations"
+    },
+    {
+      "key": "common.pack",
+      "value": "Pack"
+    },
+    {
+      "key": "common.version",
+      "value": "Version 0.1 · prototype"
+    },
+    {
+      "key": "lobby.title",
+      "value": "Lobby"
+    },
+    {
+      "key": "lobby.code",
+      "value": "Room code"
+    },
+    {
+      "key": "lobby.players",
+      "value": "Players"
+    },
+    {
+      "key": "lobby.playerCount",
+      "value": "Players (including you)"
+    },
+    {
+      "key": "lobby.addBot",
+      "value": "Add bot"
+    },
+    {
+      "key": "lobby.start",
+      "value": "Start game"
+    },
+    {
+      "key": "lobby.needPlayers",
+      "value": "At least 3 players required"
+    },
+    {
+      "key": "lobby.ready",
+      "value": "Ready to start — everyone is at the table"
+    },
+    {
+      "key": "lobby.waitingPlayers",
+      "value": "Waiting for players: {0}/{1}. Invite over LAN or add bots.\nWait for them or press Start now."
+    },
+    {
+      "key": "lobby.waitingMin",
+      "value": "Waiting for players: {0}/{1}. Invite over LAN or add bots.\nAt least 3 players required."
+    },
+    {
+      "key": "lobby.offlineHint",
+      "value": "Bot game. Create a LAN game to wait for live players."
+    },
+    {
+      "key": "lobby.calibrate",
+      "value": "Calibrate microphone"
+    },
+    {
+      "key": "lobby.micReady",
+      "value": "Microphone ready"
+    },
+    {
+      "key": "lobby.noMic",
+      "value": "No microphone"
+    },
+    {
+      "key": "lobby.target",
+      "value": "Play to"
+    },
+    {
+      "key": "lobby.autoTarget",
+      "value": "Auto"
+    },
+    {
+      "key": "lobby.autoTargetInfo",
+      "value": "Auto: {0} pts — split the deck across players"
+    },
+    {
+      "key": "lobby.pack",
+      "value": "Theme"
+    },
+    {
+      "key": "lobby.memePack",
+      "value": "Meme pack"
+    },
+    {
+      "key": "lobby.situationPack",
+      "value": "Situation pack"
+    },
+    {
+      "key": "lobby.fromMemePack",
+      "value": "From meme pack"
+    },
+    {
+      "key": "lobby.change",
+      "value": "Change"
+    },
+    {
+      "key": "lobby.onlineHint",
+      "value": "Local bot game. Create a LAN game to play with live players."
+    },
+    {
+      "key": "lobby.localRoom",
+      "value": "Local room"
+    },
+    {
+      "key": "join.title",
+      "value": "Join a room"
+    },
+    {
+      "key": "join.code",
+      "value": "Enter room code"
+    },
+    {
+      "key": "join.connect",
+      "value": "Connect"
+    },
+    {
+      "key": "join.offlineTitle",
+      "value": "Online mode is not connected yet"
+    },
+    {
+      "key": "join.offlineText",
+      "value": "This prototype plays against bots. Room codes will work once a transport (Steam / LAN) is connected."
+    },
+    {
+      "key": "settings.title",
+      "value": "Settings"
+    },
+    {
+      "key": "settings.volume",
+      "value": "Master volume"
+    },
+    {
+      "key": "settings.language",
+      "value": "Language"
+    },
+    {
+      "key": "settings.mic",
+      "value": "Use microphone"
+    },
+    {
+      "key": "settings.micHint",
+      "value": "Audio is never recorded or sent anywhere. Only a loudness number leaves the device."
+    },
+    {
+      "key": "settings.calibrate",
+      "value": "Microphone calibration"
+    },
+    {
+      "key": "settings.webcam",
+      "value": "Webcam"
+    },
+    {
+      "key": "settings.webcamFail",
+      "value": "No webcam found"
+    },
+    {
+      "key": "settings.voice",
+      "value": "LAN voice chat"
+    },
+    {
+      "key": "settings.voiceHint",
+      "value": "Hold V to talk"
+    },
+    {
+      "key": "settings.voiceMode",
+      "value": "Voice mode"
+    },
+    {
+      "key": "voice.modePush",
+      "value": "Push to talk"
+    },
+    {
+      "key": "voice.modeOpen",
+      "value": "Open mic"
+    },
+    {
+      "key": "voice.key",
+      "value": "Key: {0}"
+    },
+    {
+      "key": "voice.pressKey",
+      "value": "Press a key…"
+    },
+    {
+      "key": "voice.keyBound",
+      "value": "Voice key: {0}"
+    },
+    {
+      "key": "voice.hintPush",
+      "value": "Hold {0} to talk"
+    },
+    {
+      "key": "voice.hintOpen",
+      "value": "Microphone is always live"
+    },
+    {
+      "key": "key.space",
+      "value": "SPACE"
+    },
+    {
+      "key": "settings.mask",
+      "value": "Voice mask"
+    },
+    {
+      "key": "mask.none",
+      "value": "None"
+    },
+    {
+      "key": "mask.robot",
+      "value": "Robot"
+    },
+    {
+      "key": "mask.helium",
+      "value": "Helium"
+    },
+    {
+      "key": "mask.monster",
+      "value": "Monster"
+    },
+    {
+      "key": "settings.soon",
+      "value": "soon"
+    },
+    {
+      "key": "settings.hud",
+      "value": "Show HUD hints"
+    },
+    {
+      "key": "settings.autoContinue",
+      "value": "Auto-continue rounds"
+    },
+    {
+      "key": "settings.reset",
+      "value": "Reset progress"
+    },
+    {
+      "key": "settings.tabGame",
+      "value": "Game"
+    },
+    {
+      "key": "settings.tabDisplay",
+      "value": "Display"
+    },
+    {
+      "key": "settings.tabMusic",
+      "value": "Music"
+    },
+    {
+      "key": "settings.tabNpc",
+      "value": "NPC"
+    },
+    {
+      "key": "settings.music",
+      "value": "Music"
+    },
+    {
+      "key": "settings.musicVolume",
+      "value": "Music volume"
+    },
+    {
+      "key": "settings.musicPiano",
+      "value": "Piano"
+    },
+    {
+      "key": "settings.musicBass",
+      "value": "Upright bass"
+    },
+    {
+      "key": "settings.musicDrums",
+      "value": "Drums"
+    },
+    {
+      "key": "settings.musicSax",
+      "value": "Saxophone"
+    },
+    {
+      "key": "settings.sfxVolume",
+      "value": "Game sounds"
+    },
+    {
+      "key": "settings.musicHint",
+      "value": "Music automatically ducks during videos, spoken situations and voice chat."
+    },
+    {
+      "key": "settings.display",
+      "value": "Display"
+    },
+    {
+      "key": "settings.resolution",
+      "value": "Resolution"
+    },
+    {
+      "key": "settings.aspect",
+      "value": "Aspect ratio"
+    },
+    {
+      "key": "settings.mode",
+      "value": "Display mode"
+    },
+    {
+      "key": "settings.vsync",
+      "value": "V-Sync"
+    },
+    {
+      "key": "settings.modeFullscreen",
+      "value": "Fullscreen"
+    },
+    {
+      "key": "settings.modeBorderless",
+      "value": "Borderless"
+    },
+    {
+      "key": "settings.modeWindowed",
+      "value": "Windowed"
+    },
+    {
+      "key": "settings.aspectAuto",
+      "value": "Auto"
+    },
+    {
+      "key": "settings.autoDetect",
+      "value": "Auto-detect"
+    },
+    {
+      "key": "settings.autoApplied",
+      "value": "Display settings detected automatically"
+    },
+    {
+      "key": "settings.displayHint",
+      "value": "Changes apply immediately and are saved. Borderless mode uses the desktop resolution."
+    },
+    {
+      "key": "profile.name",
+      "value": "Nickname"
+    },
+    {
+      "key": "profile.namePlaceholder",
+      "value": "Your name"
+    },
+    {
+      "key": "profile.photo",
+      "value": "Photo"
+    },
+    {
+      "key": "profile.clear",
+      "value": "Clear"
+    },
+    {
+      "key": "profile.cropTitle",
+      "value": "Crop photo"
+    },
+    {
+      "key": "profile.cropHint",
+      "value": "Drag the photo to choose the square area."
+    },
+    {
+      "key": "profile.zoom",
+      "value": "Zoom"
+    },
+    {
+      "key": "profile.photoFail",
+      "value": "Could not open the photo"
+    },
+    {
+      "key": "profile.saved",
+      "value": "Photo saved"
+    },
+    {
+      "key": "profile.cleared",
+      "value": "Photo cleared"
+    },
+    {
+      "key": "wardrobe.title",
+      "value": "Wardrobe"
+    },
+    {
+      "key": "wardrobe.cardBacks",
+      "value": "Card backs"
+    },
+    {
+      "key": "wardrobe.outfit",
+      "value": "Outfit"
+    },
+    {
+      "key": "wardrobe.saved",
+      "value": "Saved"
+    },
+    {
+      "key": "wardrobe.hint",
+      "value": "Cosmetics show on your cards and at the table."
+    },
+    {
+      "key": "packs.title",
+      "value": "Meme & situation packs"
+    },
+    {
+      "key": "packs.enabled",
+      "value": "Enabled"
+    },
+    {
+      "key": "packs.builtin",
+      "value": "Built-in"
+    },
+    {
+      "key": "packs.user",
+      "value": "User"
+    },
+    {
+      "key": "packs.preview",
+      "value": "Scroll the strip"
+    },
+    {
+      "key": "packs.importHint",
+      "value": "Drop your packs into the Packs folder (button below). The format is described in README.txt."
+    },
+    {
+      "key": "packs.memes",
+      "value": "memes"
+    },
+    {
+      "key": "packs.stats",
+      "value": "{0} memes · {1} situations · {2}"
+    },
+    {
+      "key": "packs.addImages",
+      "value": "Add image"
+    },
+    {
+      "key": "packs.scrollHint",
+      "value": "Scroll to load more"
+    },
+    {
+      "key": "packs.deleteTitle",
+      "value": "Delete pack?"
+    },
+    {
+      "key": "packs.deleteBody",
+      "value": "Pack «{0}» will be deleted from disk with all its files. This cannot be undone."
+    },
+    {
+      "key": "packs.deleteMemeTitle",
+      "value": "Delete image?"
+    },
+    {
+      "key": "packs.deleteMemeBody",
+      "value": "«{0}» will be removed from the pack and from disk. This cannot be undone."
+    },
+    {
+      "key": "packs.deleted",
+      "value": "Pack deleted"
+    },
+    {
+      "key": "packs.deleteFailed",
+      "value": "Could not delete the pack"
+    },
+    {
+      "key": "packs.memeDeleted",
+      "value": "Image deleted"
+    },
+    {
+      "key": "packs.memeDeleteFailed",
+      "value": "Could not delete the image"
+    },
+    {
+      "key": "packs.memeAdded",
+      "value": "Image added"
+    },
+    {
+      "key": "packs.memeAddFailed",
+      "value": "Could not add the image"
+    },
+    {
+      "key": "packs.pickTitle",
+      "value": "Add image"
+    },
+    {
+      "key": "packs.pickUp",
+      "value": "Up"
+    },
+    {
+      "key": "packs.pickEmpty",
+      "value": "No images in this folder"
+    },
+    {
+      "key": "packs.pickNoAccess",
+      "value": "Cannot open this folder"
+    },
+    {
+      "key": "packs.pickLimit",
+      "value": "Showing the first {0} items"
+    },
+    {
+      "key": "calib.title",
+      "value": "Microphone calibration"
+    },
+    {
+      "key": "calib.instruction",
+      "value": "First 2 seconds of silence, then laugh into the mic for 3 seconds as loud as you can.\nThe game remembers both the room floor and your laugh."
+    },
+    {
+      "key": "calib.start",
+      "value": "Start calibration"
+    },
+    {
+      "key": "calib.skip",
+      "value": "Play without microphone"
+    },
+    {
+      "key": "calib.done",
+      "value": "Done! Floor: {0}, laugh: {1}"
+    },
+    {
+      "key": "calib.fail",
+      "value": "Could not open the microphone"
+    },
+    {
+      "key": "calib.privacy",
+      "value": "The microphone is used only to measure loudness in real time. Audio is never recorded or transmitted."
+    },
+    {
+      "key": "calib.level",
+      "value": "Level"
+    },
+    {
+      "key": "calib.listening",
+      "value": "Listening to the room…"
+    },
+    {
+      "key": "calib.laughNow",
+      "value": "Now laugh into the microphone!"
+    },
+    {
+      "key": "calib.floor",
+      "value": "Noise floor"
+    },
+    {
+      "key": "calib.redo",
+      "value": "Calibrate again"
+    },
+    {
+      "key": "game.round",
+      "value": "Round {0}"
+    },
+    {
+      "key": "game.situation",
+      "value": "Situation"
+    },
+    {
+      "key": "game.choose",
+      "value": "Pick a meme"
+    },
+    {
+      "key": "game.listen",
+      "value": "Listen to the situation…"
+    },
+    {
+      "key": "game.chosen",
+      "value": "Picked · you can change it"
+    },
+    {
+      "key": "game.chooseHint",
+      "value": "Hover a card to lift it. Click to play it. RMB — look around, Q/E — turn."
+    },
+    {
+      "key": "game.waiting",
+      "value": "Waiting for the others…"
+    },
+    {
+      "key": "game.timeLeft",
+      "value": "{0}s left"
+    },
+    {
+      "key": "game.reveal",
+      "value": "Anonymous reveal"
+    },
+    {
+      "key": "game.memeOf",
+      "value": "Meme {0} of {1}"
+    },
+    {
+      "key": "game.authorHidden",
+      "value": "Author hidden"
+    },
+    {
+      "key": "game.laughMeter",
+      "value": "Room laughter"
+    },
+    {
+      "key": "game.vote",
+      "value": "Voting"
+    },
+    {
+      "key": "game.voteHint",
+      "value": "Vote for someone else's meme. Your own is locked."
+    },
+    {
+      "key": "game.ownCard",
+      "value": "Your meme"
+    },
+    {
+      "key": "game.votes",
+      "value": "{0} votes"
+    },
+    {
+      "key": "game.voteChosen",
+      "value": "Vote cast · you can change it"
+    },
+    {
+      "key": "game.noVotes",
+      "value": "No votes"
+    },
+    {
+      "key": "game.results",
+      "value": "Round results"
+    },
+    {
+      "key": "game.progress",
+      "value": "Progress to win"
+    },
+    {
+      "key": "game.bonusLaugh",
+      "value": "Laugh bonus"
+    },
+    {
+      "key": "game.voteWinner",
+      "value": "Vote winner"
+    },
+    {
+      "key": "game.starWinner",
+      "value": "Laugh star"
+    },
+    {
+      "key": "game.badgeVote",
+      "value": "WIN"
+    },
+    {
+      "key": "game.badgeStar",
+      "value": "LAUGH"
+    },
+    {
+      "key": "game.noWinner",
+      "value": "Nobody"
+    },
+    {
+      "key": "game.tie",
+      "value": "Tie"
+    },
+    {
+      "key": "game.loudest",
+      "value": "Loudest meme"
+    },
+    {
+      "key": "game.nextRound",
+      "value": "Next round"
+    },
+    {
+      "key": "game.final",
+      "value": "Final"
+    },
+    {
+      "key": "game.winner",
+      "value": "{0} wins!"
+    },
+    {
+      "key": "game.ranking",
+      "value": "Scoreboard"
+    },
+    {
+      "key": "game.playAgain",
+      "value": "Play again"
+    },
+    {
+      "key": "game.toMenu",
+      "value": "Main menu"
+    },
+    {
+      "key": "game.suddenDeath",
+      "value": "Sudden death"
+    },
+    {
+      "key": "game.toFinal",
+      "value": "To final"
+    },
+    {
+      "key": "game.suddenDeathInfo",
+      "value": "Voting only. No decibels."
+    },
+    {
+      "key": "game.paused",
+      "value": "Paused"
+    },
+    {
+      "key": "game.resume",
+      "value": "Resume"
+    },
+    {
+      "key": "game.leave",
+      "value": "Leave to menu"
+    },
+    {
+      "key": "game.leaveConfirm",
+      "value": "Leave the game? Round progress will be lost."
+    },
+    {
+      "key": "game.pauseOnline",
+      "value": "The online match keeps running — pause is unavailable. You can open settings or leave to the menu."
+    },
+    {
+      "key": "game.voiceMix",
+      "value": "Player voice"
+    },
+    {
+      "key": "game.voiceMixEmpty",
+      "value": "No other players"
+    },
+    {
+      "key": "game.micOverloaded",
+      "value": "Microphone overloaded"
+    },
+    {
+      "key": "game.botThinking",
+      "value": "{0} is thinking…"
+    },
+    {
+      "key": "game.autoNext",
+      "value": "Next in {0}s"
+    },
+    {
+      "key": "game.waitingHost",
+      "value": "Waiting for the host…"
+    },
+    {
+      "key": "game.target",
+      "value": "Target: {0} pts"
+    },
+    {
+      "key": "game.deckLeft",
+      "value": "Situations left: {0}"
+    },
+    {
+      "key": "game.cardsLeft",
+      "value": "Memes in deck: {0}"
+    },
+    {
+      "key": "game.you",
+      "value": "You"
+    },
+    {
+      "key": "game.voicePush",
+      "value": "{0} · talk"
+    },
+    {
+      "key": "game.voiceOpen",
+      "value": "OPEN MIC"
+    },
+    {
+      "key": "game.voiceTalking",
+      "value": "● TALKING"
+    },
+    {
+      "key": "game.webcam",
+      "value": "CAM"
+    },
+    {
+      "key": "game.webcamOff",
+      "value": "CAM OFF"
+    },
+    {
+      "key": "net.hostFailed",
+      "value": "Could not start the server"
+    },
+    {
+      "key": "net.needAddress",
+      "value": "Enter the host IP address"
+    },
+    {
+      "key": "net.connecting",
+      "value": "Connecting to host…"
+    },
+    {
+      "key": "net.connected",
+      "value": "Connected"
+    },
+    {
+      "key": "net.hostClosed",
+      "value": "The host closed the game"
+    },
+    {
+      "key": "net.disconnected",
+      "value": "Connection lost"
+    },
+    {
+      "key": "net.matchInProgress",
+      "value": "Game already in progress"
+    },
+    {
+      "key": "net.lobbyFull",
+      "value": "Lobby is full"
+    },
+    {
+      "key": "net.playerLeftMatch",
+      "value": "A player left — match stopped"
+    },
+    {
+      "key": "net.playerBecameBot",
+      "value": "{0} disconnected — a bot takes over"
+    },
+    {
+      "key": "net.hostNotRunning",
+      "value": "LAN server is not running"
+    },
+    {
+      "key": "net.rematchRequested",
+      "value": "Rematch requested"
+    },
+    {
+      "key": "net.noPauseOnline",
+      "value": "Pause is unavailable online"
+    },
+    {
+      "key": "net.lanHost",
+      "value": "LAN: host game"
+    },
+    {
+      "key": "net.lanJoin",
+      "value": "LAN: join"
+    },
+    {
+      "key": "net.hostIp",
+      "value": "Host IP"
+    },
+    {
+      "key": "net.port",
+      "value": "Port"
+    },
+    {
+      "key": "net.joinHint",
+      "value": "Start the game on your friend's PC, host a LAN game, then enter their Radmin VPN IP."
+    },
+    {
+      "key": "net.hostLobby",
+      "value": "LAN lobby · you are the host"
+    },
+    {
+      "key": "net.clientLobby",
+      "value": "LAN lobby · connected to host"
+    },
+    {
+      "key": "net.youHost",
+      "value": "Host"
+    },
+    {
+      "key": "net.youClient",
+      "value": "Client"
+    },
+    {
+      "key": "net.waitingHost",
+      "value": "Waiting for the host…"
+    },
+    {
+      "key": "net.connectInfo",
+      "value": "Connect to: {0}:{1}"
+    },
+    {
+      "key": "net.localIps",
+      "value": "IP: {0}"
+    },
+    {
+      "key": "lobby.changePack",
+      "value": "Change pack"
+    },
+    {
+      "key": "pack.ready",
+      "value": "Pack ready"
+    },
+    {
+      "key": "pack.downloading",
+      "value": "Downloading pack"
+    },
+    {
+      "key": "pack.waitClients",
+      "value": "Waiting for clients to download the pack"
+    },
+    {
+      "key": "pack.serverFail",
+      "value": "Could not start the pack server (port busy)"
+    },
+    {
+      "key": "pack.lockAfterJoin",
+      "value": "The pack cannot be changed after players joined"
+    },
+    {
+      "key": "pack.noServer",
+      "value": "The host is not sharing the pack"
+    },
+    {
+      "key": "pack.badChecksum",
+      "value": "Pack checksum mismatch"
+    },
+    {
+      "key": "pack.missingAfterDownload",
+      "value": "Pack not found after download"
+    },
+    {
+      "key": "pack.downloadFail",
+      "value": "Could not download the pack"
+    },
+    {
+      "key": "toast.micOff",
+      "value": "Microphone off"
+    },
+    {
+      "key": "toast.micOn",
+      "value": "Microphone on"
+    },
+    {
+      "key": "toast.micFailed",
+      "value": "No microphone found"
+    },
+    {
+      "key": "toast.micCalibrated",
+      "value": "Calibration saved"
+    },
+    {
+      "key": "toast.webcamOn",
+      "value": "Webcam on"
+    },
+    {
+      "key": "toast.webcamOff",
+      "value": "Webcam off"
+    },
+    {
+      "key": "toast.webcamOnlineOnly",
+      "value": "Webcam works in LAN games only"
+    },
+    {
+      "key": "toast.saved",
+      "value": "Saved"
+    },
+    {
+      "key": "toast.needPlayers",
+      "value": "At least 3 players"
+    },
+    {
+      "key": "toast.packReloaded",
+      "value": "Packs reloaded"
+    },
+    {
+      "key": "toast.packEmpty",
+      "value": "The selected pack has no memes"
+    },
+    {
+      "key": "toast.online",
+      "value": "Online mode is not connected yet"
+    },
+    {
+      "key": "toast.micDenied",
+      "value": "Allow microphone access"
+    },
+    {
+      "key": "toast.copied",
+      "value": "Code copied"
+    },
+    {
+      "key": "cat.work",
+      "value": "Work"
+    },
+    {
+      "key": "cat.study",
+      "value": "Study"
+    },
+    {
+      "key": "cat.family",
+      "value": "Family"
+    },
+    {
+      "key": "cat.friends",
+      "value": "Friends"
+    },
+    {
+      "key": "cat.love",
+      "value": "Love"
+    },
+    {
+      "key": "cat.money",
+      "value": "Money"
+    },
+    {
+      "key": "cat.tech",
+      "value": "Tech"
+    },
+    {
+      "key": "cat.food",
+      "value": "Food"
+    },
+    {
+      "key": "cat.transport",
+      "value": "Transport"
+    },
+    {
+      "key": "cat.absurd",
+      "value": "Absurd"
+    },
+    {
+      "key": "cat.funny_faces",
+      "value": "Funny faces"
+    },
+    {
+      "key": "cat.reactions",
+      "value": "Reactions"
+    },
+    {
+      "key": "cat.animals",
+      "value": "Animals"
+    },
+    {
+      "key": "cat.vintage",
+      "value": "Vintage"
+    },
+    {
+      "key": "cat.historical",
+      "value": "Historical"
+    },
+    {
+      "key": "cat.advertisements",
+      "value": "Advertisements"
+    },
+    {
+      "key": "cat.people",
+      "value": "People"
+    },
+    {
+      "key": "cat.dance_and_movement",
+      "value": "Dance & movement"
+    },
+    {
+      "key": "cat.unexpected_moments",
+      "value": "Unexpected"
+    },
+    {
+      "key": "cat.classic_comedy",
+      "value": "Classic comedy"
+    },
+    {
+      "key": "cat.work_and_daily_life",
+      "value": "Daily life"
+    },
+    {
+      "key": "cat.sports_and_activities",
+      "value": "Sports"
+    },
+    {
+      "key": "cat.food_and_cooking",
+      "value": "Food & cooking"
+    },
+    {
+      "key": "cat.family_friendly",
+      "value": "Family friendly"
+    },
+    {
+      "key": "outfit.tux",
+      "value": "Tuxedo"
+    },
+    {
+      "key": "outfit.hawaii",
+      "value": "Hawaii"
+    },
+    {
+      "key": "outfit.grey",
+      "value": "Grey"
+    },
+    {
+      "key": "outfit.white",
+      "value": "White"
+    },
+    {
+      "key": "outfit.stealth",
+      "value": "Stealth"
+    },
+    {
+      "key": "npc.chat.header",
+      "value": "NPC LINES"
+    },
+    {
+      "key": "npc.settings.title",
+      "value": "Characters & dialogue"
+    },
+    {
+      "key": "npc.settings.dialogues",
+      "value": "NPC dialogue"
+    },
+    {
+      "key": "npc.settings.dialoguesHint",
+      "value": "Lines appear as speech bubbles next to the characters. Works offline."
+    },
+    {
+      "key": "npc.settings.bubbles",
+      "value": "Speech bubbles"
+    },
+    {
+      "key": "npc.settings.bubblesHint",
+      "value": "A bubble appears next to the speaker and fades out on its own."
+    },
+    {
+      "key": "npc.settings.voice",
+      "value": "NPC voice"
+    },
+    {
+      "key": "npc.settings.voiceHint",
+      "value": "Off by default. Piper/Vosk models are not bundled and are installed separately."
+    },
+    {
+      "key": "npc.settings.voiceMode",
+      "value": "Voice layout"
+    },
+    {
+      "key": "npc.voice.economy",
+      "value": "Economy · 1 voice"
+    },
+    {
+      "key": "npc.voice.balanced",
+      "value": "Balanced · 2–3 voices"
+    },
+    {
+      "key": "npc.voice.extended",
+      "value": "Extended · up to 7 voices"
+    },
+    {
+      "key": "npc.settings.stt",
+      "value": "Speech input (Vosk)"
+    },
+    {
+      "key": "npc.settings.sttHint",
+      "value": "Hold {0} in-game and speak. Requires the Vosk engine and a language model."
+    },
+    {
+      "key": "npc.settings.sttModel",
+      "value": "Speech model"
+    },
+    {
+      "key": "npc.settings.sttDownload",
+      "value": "Download Vosk for {0}"
+    },
+    {
+      "key": "npc.settings.sttDownloading",
+      "value": "Downloading Vosk…"
+    },
+    {
+      "key": "npc.settings.sttInstalled",
+      "value": "Vosk ready"
+    },
+    {
+      "key": "npc.settings.sttUnavailable",
+      "value": "No model for this language yet"
+    },
+    {
+      "key": "npc.settings.sttRuntime",
+      "value": "Vosk engine"
+    },
+    {
+      "key": "npc.settings.sttRuntimeSize",
+      "value": "Engine ~15 MB · model ~45 MB"
+    },
+    {
+      "key": "npc.settings.sttLicense",
+      "value": "Vosk and models: Apache-2.0"
+    },
+    {
+      "key": "npc.stt.disabled",
+      "value": "Speech input is off"
+    },
+    {
+      "key": "npc.stt.needModel",
+      "value": "Vosk model is not installed"
+    },
+    {
+      "key": "npc.stt.loading",
+      "value": "Loading Vosk model…"
+    },
+    {
+      "key": "npc.stt.error",
+      "value": "Vosk error"
+    },
+    {
+      "key": "npc.stt.ready",
+      "value": "Ready · hold {0}"
+    },
+    {
+      "key": "npc.stt.listening",
+      "value": "Listening… release {0}"
+    },
+    {
+      "key": "npc.stt.listeningShort",
+      "value": "Listening…"
+    },
+    {
+      "key": "npc.stt.notHeard",
+      "value": "I didn't catch that. Try again."
+    },
+    {
+      "key": "npc.stt.heard",
+      "value": "You: {0}"
+    },
+    {
+      "key": "npc.stt.tooShort",
+      "value": "Hold the key a little longer."
+    },
+    {
+      "key": "npc.stt.processing",
+      "value": "Recognizing…"
+    },
+    {
+      "key": "npc.stt.modelRu",
+      "value": "Russian"
+    },
+    {
+      "key": "npc.stt.modelEn",
+      "value": "English"
+    },
+    {
+      "key": "npc.settings.models",
+      "value": "Language packs & models"
+    },
+    {
+      "key": "npc.settings.modelsHint",
+      "value": "Models live outside the game install, in your user data folder. The base game works without them."
+    },
+    {
+      "key": "npc.settings.openFolder",
+      "value": "Open model folder"
+    },
+    {
+      "key": "npc.settings.languagePack",
+      "value": "Dialogue language"
+    },
+    {
+      "key": "npc.settings.fallback",
+      "value": "Pack missing — using {0}"
+    },
+    {
+      "key": "npc.settings.installed",
+      "value": "Installed"
+    },
+    {
+      "key": "npc.settings.notInstalled",
+      "value": "Not installed"
+    },
+    {
+      "key": "npc.settings.download",
+      "value": "Download"
+    },
+    {
+      "key": "npc.settings.cancel",
+      "value": "Cancel"
+    },
+    {
+      "key": "npc.settings.verify",
+      "value": "Verify"
+    },
+    {
+      "key": "npc.settings.remove",
+      "value": "Remove"
+    },
+    {
+      "key": "npc.settings.freeSpace",
+      "value": "Free disk space: {0}"
+    },
+    {
+      "key": "npc.settings.noPackages",
+      "value": "The catalog has no optional models yet.\nThe game is fully playable without them."
+    },
+    {
+      "key": "npc.settings.license",
+      "value": "License: {0}"
+    },
+    {
+      "key": "npc.models.missing",
+      "value": "Package not found."
+    },
+    {
+      "key": "npc.models.notInstalled",
+      "value": "Not installed."
+    },
+    {
+      "key": "npc.models.broken",
+      "value": "Installed files look incomplete. Download again."
+    },
+    {
+      "key": "npc.models.verified",
+      "value": "Files verified."
+    },
+    {
+      "key": "npc.models.cancelling",
+      "value": "Cancelling…"
+    },
+    {
+      "key": "npc.models.noCatalog",
+      "value": "This package is not available in the catalog yet."
+    },
+    {
+      "key": "npc.models.noSpace",
+      "value": "Not enough free disk space."
+    },
+    {
+      "key": "npc.models.downloading",
+      "value": "Downloading…"
+    },
+    {
+      "key": "npc.models.failed",
+      "value": "Download failed."
+    },
+    {
+      "key": "npc.models.cancelled",
+      "value": "Download cancelled."
+    },
+    {
+      "key": "npc.models.verifying",
+      "value": "Verifying checksum…"
+    },
+    {
+      "key": "npc.models.checksum",
+      "value": "Checksum mismatch. The archive was removed; try again."
+    },
+    {
+      "key": "npc.models.installing",
+      "value": "Installing…"
+    },
+    {
+      "key": "npc.models.badArchive",
+      "value": "The archive is damaged or unsupported."
+    },
+    {
+      "key": "npc.models.installed",
+      "value": "Installed."
+    },
+    {
+      "key": "npc.models.busy",
+      "value": "Another download is already running."
+    },
+    {
+      "key": "npc.models.kind.piper",
+      "value": "Piper voice"
+    },
+    {
+      "key": "npc.models.kind.vosk",
+      "value": "Vosk recognition"
+    },
+    {
+      "key": "npc.models.kind.voskRuntime",
+      "value": "Vosk engine"
+    },
+    {
+      "key": "npc.models.kind.other",
+      "value": "Package"
+    },
+    {
+      "key": "npc.toast.saved",
+      "value": "NPC settings saved"
+    },
+    {
+      "key": "settings.tabLanguage",
+      "value": "Language"
+    },
+    {
+      "key": "language.title",
+      "value": "Language packs"
+    },
+    {
+      "key": "language.hint",
+      "value": "Pick a language and the interface and dialogue download automatically. Offline, the game stays in English."
+    },
+    {
+      "key": "language.current",
+      "value": "Current"
+    },
+    {
+      "key": "language.builtIn",
+      "value": "Built in"
+    },
+    {
+      "key": "language.installed",
+      "value": "Installed"
+    },
+    {
+      "key": "language.notInstalled",
+      "value": "Not installed"
+    },
+    {
+      "key": "language.available",
+      "value": "Available"
+    },
+    {
+      "key": "language.unavailable",
+      "value": "Not available yet"
+    },
+    {
+      "key": "language.use",
+      "value": "Use"
+    },
+    {
+      "key": "language.download",
+      "value": "Download"
+    },
+    {
+      "key": "language.downloading",
+      "value": "Downloading…"
+    },
+    {
+      "key": "language.cancel",
+      "value": "Cancel"
+    },
+    {
+      "key": "language.retry",
+      "value": "Retry"
+    },
+    {
+      "key": "language.checking",
+      "value": "Checking catalog…"
+    },
+    {
+      "key": "language.offline",
+      "value": "The catalog is unavailable. Installed languages work; new ones cannot be downloaded."
+    },
+    {
+      "key": "language.error",
+      "value": "Could not download the language pack."
+    },
+    {
+      "key": "language.done",
+      "value": "Language applied."
+    },
+    {
+      "key": "language.gameTooOld",
+      "value": "This pack requires a newer game version."
+    },
+    {
+      "key": "language.update",
+      "value": "Update"
+    },
+    {
+      "key": "language.size",
+      "value": "Size: {0}"
+    },
+    {
+      "key": "language.sttReady",
+      "value": "Speech model is installed."
+    },
+    {
+      "key": "language.sttMissing",
+      "value": "The speech model is not installed."
+    },
+    {
+      "key": "language.sttDownload",
+      "value": "Download speech model"
+    },
+    {
+      "key": "language.sttAuto",
+      "value": "Downloads automatically when speech input is enabled."
+    },
+    {
+      "key": "language.noComponents",
+      "value": "The catalog has no components for this language yet."
+    },
+    {
+      "key": "language.delete",
+      "value": "Remove pack"
+    },
+    {
+      "key": "language.applied",
+      "value": "The pack is installed and applied."
+    }
+  ]
+}
