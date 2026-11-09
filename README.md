@@ -150,8 +150,9 @@ Installed files live in:
 - Simple, free, works for public builds.
 - **No SLA.** GitHub Releases can be slow or unavailable in some regions.
 - Not recommended as the only distribution channel for a commercial Steam release.
-- URLs used by the current `catalog.json` are placeholders until the repository owner is set;
-  the release workflow rewrites them using the actual GitHub repository.
+- `catalog.json` currently points at the
+  [tavryxstudio/meme-laugh-language-packs](https://github.com/tavryxstudio/meme-laugh-language-packs)
+  release assets; the release workflow rewrites the URLs and hashes on every tag.
 
 ### 2. Steam depots / free DLC / own CDN (recommended for Steam)
 
