@@ -44,8 +44,16 @@ def build_zip(payload: bytes, name: str) -> bytes:
         info = zipfile.ZipInfo(name, date_time=(2026, 11, 1, 0, 0, 0))
         info.compress_type = zipfile.ZIP_DEFLATED
         info.external_attr = 0o644 << 16
+        info.create_system = 3  # Unix, keeps hashes identical on Windows and Linux
         archive.writestr(info, payload)
     return buffer.getvalue()
+
+
+def normalize_payload(path: str, data: bytes) -> bytes:
+    """Keep release hashes stable across LF and CRLF checkouts."""
+    if path.lower().endswith((".json", ".txt", ".md")):
+        return data.replace(b"\r\n", b"\n")
+    return data
 
 
 def main() -> int:
@@ -91,6 +99,7 @@ def main() -> int:
                 return 1
             with open(payload_path, "rb") as f:
                 payload = f.read()
+            payload = normalize_payload(payload_path, payload)
             filename = f"{code}-{kind}-v{component.get('version', 1)}.zip"
             data = build_zip(payload, KIND_FILE[kind])
             with open(os.path.join(args.dist, filename), "wb") as f:
