@@ -1637,6 +1637,14 @@
     {
       "key": "npc.stt.whisperReady",
       "value": "Whisper ready · hold {0}"
+    },
+    {
+      "key": "npc.settings.profanity",
+      "value": "Profanity"
+    },
+    {
+      "key": "npc.settings.profanityHint",
+      "value": "Allow strong language in bot lines. Adults only."
     }
   ]
 }

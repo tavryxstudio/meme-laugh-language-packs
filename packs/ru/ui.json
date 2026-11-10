@@ -1637,6 +1637,14 @@
     {
       "key": "npc.stt.whisperReady",
       "value": "Whisper готов · удерживайте {0}"
+    },
+    {
+      "key": "npc.settings.profanity",
+      "value": "Матюки"
+    },
+    {
+      "key": "npc.settings.profanityHint",
+      "value": "Разрешить крепкие выражения в репликах ботов. Только для взрослых."
     }
   ]
 }

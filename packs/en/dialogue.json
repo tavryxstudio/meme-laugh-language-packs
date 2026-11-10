@@ -3,221 +3,1480 @@
   "name": "English",
   "formatVersion": 1,
   "strings": [
-    { "key": "npc.language.name", "value": "English" }
+    {
+      "key": "npc.language.name",
+      "value": "English"
+    }
   ],
   "names": [
-    { "id": "vasya", "name": "Vasya", "title": "The sarcastic showman" },
-    { "id": "boris", "name": "Boris", "title": "The deadpan analyst" },
-    { "id": "lena", "name": "Lena", "title": "The heart of the table" },
-    { "id": "gosha", "name": "Gosha", "title": "Human-shaped chaos" },
-    { "id": "rita", "name": "Rita", "title": "Fiercely competitive" },
-    { "id": "sonya", "name": "Sonya", "title": "The quiet observer" },
-    { "id": "tolya", "name": "Tolya", "title": "The unbothered philosopher" }
+    {
+      "id": "vasya",
+      "name": "Vasya",
+      "title": "The sarcastic showman"
+    },
+    {
+      "id": "boris",
+      "name": "Boris",
+      "title": "The deadpan analyst"
+    },
+    {
+      "id": "lena",
+      "name": "Lena",
+      "title": "The heart of the table"
+    },
+    {
+      "id": "gosha",
+      "name": "Gosha",
+      "title": "Human-shaped chaos"
+    },
+    {
+      "id": "rita",
+      "name": "Rita",
+      "title": "Fiercely competitive"
+    },
+    {
+      "id": "sonya",
+      "name": "Sonya",
+      "title": "The quiet observer"
+    },
+    {
+      "id": "tolya",
+      "name": "Tolya",
+      "title": "The unbothered philosopher"
+    }
   ],
   "lines": [
-    { "event": "round_start", "tone": "sarcastic", "text": "Well, that's a situation. I can already feel my meme losing." },
-    { "event": "round_start", "tone": "sarcastic", "text": "This prompt is so real that I'd rather not comment on it." },
-    { "event": "round_start", "tone": "dry", "text": "The situation is accurately described. Now we just need a card that doesn't ruin it." },
-    { "event": "round_start", "tone": "dry", "text": "\"{situation}\". Statistically, our chances are low. But we'll try." },
-    { "event": "round_start", "tone": "kind", "text": "Oh, this is about all of us. Let's play gently!" },
-    { "event": "round_start", "tone": "kind", "text": "\"{situation}\" — familiar, right? Good luck, everyone!" },
-    { "event": "round_start", "tone": "absurd", "text": "I was in that situation once. To be fair, I was a cat at the time." },
-    { "event": "round_start", "tone": "absurd", "text": "Very serious situation. So I'll pick something aggressively strange." },
-    { "event": "round_start", "tone": "competitive", "text": "The situation is clear. So is the victory." },
-    { "event": "round_start", "tone": "competitive", "text": "\"{situation}\". Perfect. This is my round." },
-    { "event": "round_start", "tone": "shy", "text": "I think I have a card for this… maybe." },
-    { "event": "round_start", "tone": "shy", "text": "Oh. I didn't fully understand it, but I'll do my best." },
-    { "event": "round_start", "tone": "chill", "text": "Relax, it's just a card. Although yes, an important one." },
-    { "event": "round_start", "tone": "chill", "text": "\"{situation}\". It happens. We'll figure it out." },
-
-    { "event": "choose", "tone": "sarcastic", "text": "I already have my pick. It will upset you." },
-    { "event": "choose", "tone": "dry", "text": "Choosing logically. For the first time tonight." },
-    { "event": "choose", "tone": "kind", "text": "Take your time, you have a great hand." },
-    { "event": "choose", "tone": "absurd", "text": "I'm about to play a card nobody will understand." },
-    { "event": "choose", "tone": "competitive", "text": "Stop thinking, the clock is running." },
-    { "event": "choose", "tone": "shy", "text": "I'm still looking… don't rush me." },
-    { "event": "choose", "tone": "chill", "text": "I have everything under control. Roughly." },
-
-    { "event": "reveal", "tone": "sarcastic", "text": "This meme explains everything. Unfortunately." },
-    { "event": "reveal", "tone": "sarcastic", "text": "Someone tried very hard. Or very little." },
-    { "event": "reveal", "tone": "dry", "text": "Statistically, that should have been funnier." },
-    { "event": "reveal", "tone": "dry", "text": "An interesting choice. I won't call it a good one." },
-    { "event": "reveal", "tone": "kind", "text": "Oh, I like this card!" },
-    { "event": "reveal", "tone": "kind", "text": "Look at that little treasure. Whoever played it, thank you." },
-    { "event": "reveal", "tone": "absurd", "text": "I don't get it, but I'm already laughing." },
-    { "event": "reveal", "tone": "absurd", "text": "This is either a masterpiece or I drank the wrong thing." },
-    { "event": "reveal", "tone": "competitive", "text": "Average meme. Not bad, not a win." },
-    { "event": "reveal", "tone": "competitive", "text": "I would have played stronger. Just saying." },
-    { "event": "reveal", "tone": "shy", "text": "Quiet, but sweet." },
-    { "event": "reveal", "tone": "shy", "text": "I think I got the joke. I think." },
-    { "event": "reveal", "tone": "chill", "text": "Decent meme. Life goes on." },
-    { "event": "reveal", "tone": "chill", "text": "Great atmosphere. I'd hang that on a wall." },
-
-    { "event": "win", "tone": "sarcastic", "text": "Victory. As expected, but still nice." },
-    { "event": "win", "tone": "dry", "text": "Logical." },
-    { "event": "win", "tone": "kind", "text": "Thank you! You're all wonderful." },
-    { "event": "win", "tone": "absurd", "text": "I won? I didn't even realize I was playing." },
-    { "event": "win", "tone": "competitive", "text": "Point mine. Moving on." },
-    { "event": "win", "tone": "shy", "text": "Oh… that's really for me? Thank you." },
-    { "event": "win", "tone": "chill", "text": "Well, that's nice. Let's not overdo it." },
-    { "event": "win", "tone": "any", "speaker": "vasya", "text": "Victory. You may applaud standing, I allow it." },
-    { "event": "win", "tone": "any", "speaker": "boris", "text": "Predictable. I'm almost bored." },
-    { "event": "win", "tone": "any", "speaker": "lena", "text": "I'm so happy! Let everyone feel good." },
-    { "event": "win", "tone": "any", "speaker": "gosha", "text": "VICTORY! I don't know how, but VICTORY!" },
-    { "event": "win", "tone": "any", "speaker": "rita", "text": "Another point for me. Keep counting." },
-    { "event": "win", "tone": "any", "speaker": "sonya", "text": "I'm really happy… thank you." },
-    { "event": "win", "tone": "any", "speaker": "tolya", "text": "Easy. A win is just a good evening." },
-
-    { "event": "lose", "tone": "sarcastic", "text": "{rival}, remember this moment. I will too." },
-    { "event": "lose", "tone": "sarcastic", "text": "{rival}, enjoy it. Next round is mine." },
-    { "event": "lose", "tone": "dry", "text": "Congratulations, {rival}. Mathematically deserved." },
-    { "event": "lose", "tone": "dry", "text": "I accept defeat. Without enthusiasm, but I accept it." },
-    { "event": "lose", "tone": "kind", "text": "{rival}, well played! I'll get you next time." },
-    { "event": "lose", "tone": "kind", "text": "That's fine! The important thing is that we're all here." },
-    { "event": "lose", "tone": "absurd", "text": "{rival}, you won, but my card was more conceptual." },
-    { "event": "lose", "tone": "absurd", "text": "I object! But beautifully done, beautifully." },
-    { "event": "lose", "tone": "competitive", "text": "{rival}, enjoy it while it lasts." },
-    { "event": "lose", "tone": "competitive", "text": "Point to you. I'm still keeping score." },
-    { "event": "lose", "tone": "shy", "text": "Congratulations, {rival}… I'm not upset. Almost." },
-    { "event": "lose", "tone": "shy", "text": "Next time I'll try to be braver too." },
-    { "event": "lose", "tone": "chill", "text": "{rival}, beautifully played. Respect." },
-    { "event": "lose", "tone": "chill", "text": "Not my round. It happens. Put the kettle on." },
-
-    { "event": "star", "tone": "sarcastic", "text": "The laugh star goes to {player}. Applause, don't overdo it." },
-    { "event": "star", "tone": "dry", "text": "Laughter is measurable. Today it belongs to {player}." },
-    { "event": "star", "tone": "kind", "text": "{player}, your meme made the evening!" },
-    { "event": "star", "tone": "absurd", "text": "{player} broke our faces. In a good way." },
-    { "event": "star", "tone": "competitive", "text": "Laughter isn't points. But let's pretend." },
-    { "event": "star", "tone": "shy", "text": "I really laughed, {player}." },
-    { "event": "star", "tone": "chill", "text": "{player}, you're tonight's main source of joy." },
-
-    { "event": "tie", "tone": "any", "text": "A tie. Like life: everyone is right and nobody wins." },
-    { "event": "tie", "tone": "any", "text": "Equality. Suspiciously fair." },
-    { "event": "tie", "tone": "any", "text": "A tie! Which means the next round will be meaner." },
-    { "event": "tie", "tone": "any", "text": "We're all equally funny. That's a compliment." },
-
-    { "event": "final_win", "tone": "any", "text": "The final. I'm the best. Thank you, I know." },
-    { "event": "final_win", "tone": "any", "text": "Victory. May I keep this in my memory?" },
-    { "event": "final_win", "tone": "any", "text": "I won the evening! Hugging everyone." },
-    { "event": "final_win", "tone": "any", "text": "Chaos won. As it should." },
-    { "event": "final_win", "tone": "any", "text": "First place. Where's my medal?" },
-    { "event": "final_win", "tone": "any", "text": "Oh… I won? I didn't prepare a speech." },
-    { "event": "final_win", "tone": "any", "text": "The final is mine. Let's eat." },
-
-    { "event": "final_lose", "tone": "any", "text": "{winner}, congratulations. I'm almost not jealous." },
-    { "event": "final_lose", "tone": "any", "text": "{winner} took the evening. Well deserved." },
-    { "event": "final_lose", "tone": "any", "text": "{winner}, you were better. Today." },
-    { "event": "final_lose", "tone": "any", "text": "Second place is still a place. Probably." },
-    { "event": "final_lose", "tone": "any", "text": "Next time I'm bringing a stranger card." },
-
-    { "event": "idle", "tone": "sarcastic", "text": "Does anyone still remember why we're here?" },
-    { "event": "idle", "tone": "sarcastic", "text": "I hate pauses. You can hear my thoughts in them." },
-    { "event": "idle", "tone": "dry", "text": "I was thinking: memes are just our faces from different years." },
-    { "event": "idle", "tone": "dry", "text": "Carry on. I have many more opinions." },
-    { "event": "idle", "tone": "kind", "text": "I'm holding a card that is either brilliant or terrible." },
-    { "event": "idle", "tone": "kind", "text": "If I win, the virtual coffee is on me." },
-    { "event": "idle", "tone": "absurd", "text": "I feel like this table is especially wooden tonight." },
-    { "event": "idle", "tone": "absurd", "text": "I'd tell a joke, but you've already seen my cards." },
-    { "event": "idle", "tone": "competitive", "text": "I'm voting for laughter. And for myself, obviously." },
-    { "event": "idle", "tone": "competitive", "text": "We can relax after the victory." },
-    { "event": "idle", "tone": "shy", "text": "Don't look at my hand like that. It's shy." },
-    { "event": "idle", "tone": "shy", "text": "I'm almost sure that was a good idea." },
-    { "event": "idle", "tone": "chill", "text": "Great evening. Even if I lose." },
-    { "event": "idle", "tone": "chill", "text": "A meme is a mirror. Sometimes a crooked one." },
-    { "event": "idle", "tone": "any", "speaker": "vasya", "text": "Sarcasm is a free sauce for any meme." },
-    { "event": "idle", "tone": "any", "speaker": "boris", "text": "I analyze probabilities. You don't. It shows." },
-    { "event": "idle", "tone": "any", "speaker": "lena", "text": "After the game, everyone gets a hug. Even the winner." },
-    { "event": "idle", "tone": "any", "speaker": "gosha", "text": "Once I won a round without looking at my card. It was that card." },
-    { "event": "idle", "tone": "any", "speaker": "rita", "text": "If you think I'm not counting points, you're wrong." },
-    { "event": "idle", "tone": "any", "speaker": "sonya", "text": "I'm not silent. I'm accumulating thoughts." },
-    { "event": "idle", "tone": "any", "speaker": "tolya", "text": "Life is like this round. The key is not to rush." },
-
-    { "event": "joke", "tone": "sarcastic", "text": "Why do I never argue with cards? They're always in my hand." },
-    { "event": "joke", "tone": "dry", "text": "My therapist said not to compare myself to others. I showed him my cards." },
-    { "event": "joke", "tone": "kind", "text": "Life is like this round: pick, reveal, get zero." },
-    { "event": "joke", "tone": "absurd", "text": "I'm not toxic, I'm just bad at this game." },
-    { "event": "joke", "tone": "competitive", "text": "I have a plan. It's called 'hope'." },
-    { "event": "joke", "tone": "shy", "text": "Memes cure stress. Especially other people's memes." },
-    { "event": "joke", "tone": "chill", "text": "I'm in great shape. Round." },
-
-    { "event": "banter", "tone": "sarcastic", "text": "{rival}, you picked another card that says more about you than the situation." },
-    { "event": "banter", "tone": "dry", "text": "{rival}, I'd believe you, but your taste is exactly like mine." },
-    { "event": "banter", "tone": "kind", "text": "{rival}, don't worry about me. I'm just trying very hard." },
-    { "event": "banter", "tone": "absurd", "text": "{rival}, let's bet on who says the dumbest joke tonight. You're already leading." },
-    { "event": "banter", "tone": "competitive", "text": "{rival}, admit it, you choose with your eyes, not your brain." },
-    { "event": "banter", "tone": "shy", "text": "{rival}, you're very quiet today. Suspicious." },
-    { "event": "banter", "tone": "chill", "text": "{rival}, that card of yours belongs in a textbook." },
-
-    { "event": "banter_reply", "tone": "sarcastic", "text": "{rival}, I'd be offended, but I'm too flattered." },
-    { "event": "banter_reply", "tone": "dry", "text": "{rival}, say that again when you lose." },
-    { "event": "banter_reply", "tone": "kind", "text": "{rival}, thanks for the attention. I'm working on confidence." },
-    { "event": "banter_reply", "tone": "absurd", "text": "{rival}, I chose with my heart. My heart was wrong." },
-    { "event": "banter_reply", "tone": "competitive", "text": "{rival}, you underestimate me. That's my best strategy." },
-    { "event": "banter_reply", "tone": "shy", "text": "{rival}, silence is also an answer. But I'll answer anyway." },
-    { "event": "banter_reply", "tone": "chill", "text": "{rival}, watch your choices. Mine are already legendary." },
-
-    { "event": "memory", "tone": "sarcastic", "text": "I remember, {rival}, how you took that point last time. I haven't forgotten." },
-    { "event": "memory", "tone": "dry", "text": "You and I have history, {rival}. Not as long as this evening." },
-    { "event": "memory", "tone": "kind", "text": "{rival}, your last meme still warms my heart." },
-    { "event": "memory", "tone": "absurd", "text": "{rival}, your last meme still haunts my night rounds." },
-    { "event": "memory", "tone": "competitive", "text": "I remember who wins here most often, {rival}. For now." },
-    { "event": "memory", "tone": "shy", "text": "{rival}, you got lucky last round. Let's check again." },
-    { "event": "memory", "tone": "chill", "text": "{rival}, I prepared for this moment. Well, almost." },
-
-    { "event": "player_win", "tone": "sarcastic", "text": "You're on fire tonight. It's concerning." },
-    { "event": "player_win", "tone": "dry", "text": "I see you've decided not to give the evening to the bots." },
-    { "event": "player_win", "tone": "kind", "text": "Great card. I'd steal it." },
-    { "event": "player_win", "tone": "absurd", "text": "You won. Remember this feeling — I collect them." },
-    { "event": "player_win", "tone": "competitive", "text": "I don't want to sound nice, but that was beautiful." },
-    { "event": "player_win", "tone": "shy", "text": "Congratulations. Now I'll pretend I wasn't trying." },
-    { "event": "player_win", "tone": "chill", "text": "Your victory. My mysterious pause." },
-
-    { "event": "vote", "tone": "sarcastic", "text": "I'm voting for the meme that at least doesn't explain my life." },
-    { "event": "vote", "tone": "dry", "text": "I choose with my heart. And a little strategy." },
-    { "event": "vote", "tone": "kind", "text": "Whose meme is funniest? Spoiler: not mine." },
-    { "event": "vote", "tone": "absurd", "text": "My vote isn't bought. It's rented." },
-    { "event": "vote", "tone": "competitive", "text": "Now I'll pretend I have a plan." },
-    { "event": "vote", "tone": "shy", "text": "I'm voting for the one I wanted to play myself." },
-    { "event": "vote", "tone": "chill", "text": "Enough doubt. Voting." },
-
-    { "event": "answer_greeting", "tone": "sarcastic", "text": "Hello, {player}. I was starting to miss your cards." },
-    { "event": "answer_greeting", "tone": "dry", "text": "Hello, {player}. Your presence has been recorded." },
-    { "event": "answer_greeting", "tone": "kind", "text": "Hi, {player}! Lovely to hear you." },
-    { "event": "answer_greeting", "tone": "absurd", "text": "Oh, {player}! I was just thinking about you and a sandwich." },
-    { "event": "answer_greeting", "tone": "competitive", "text": "Hello, {player}. I already counted the points." },
-    { "event": "answer_greeting", "tone": "shy", "text": "Oh… hi, {player}. I'm listening." },
-    { "event": "answer_greeting", "tone": "chill", "text": "Hey, {player}. Good to have you with us." },
-
-    { "event": "answer_question", "tone": "sarcastic", "text": "{player}, great question. Shame I don't have a great answer." },
-    { "event": "answer_question", "tone": "dry", "text": "Good question. The odds of a correct answer are about the same as my meme's." },
-    { "event": "answer_question", "tone": "kind", "text": "Oh, {player}, I'd answer, but let's play a round first." },
-    { "event": "answer_question", "tone": "absurd", "text": "The answer is somewhere between a meme and a cat. Hope that helped." },
-    { "event": "answer_question", "tone": "competitive", "text": "Great question, but points matter more. Ask me after the round." },
-    { "event": "answer_question", "tone": "shy", "text": "I'm… not sure I know the answer. But it sounded serious." },
-    { "event": "answer_question", "tone": "chill", "text": "Good question, {player}. Let's think about it together, slowly." },
-
-    { "event": "answer_insult", "tone": "sarcastic", "text": "{player}, I'd be offended, but you clearly tried." },
-    { "event": "answer_insult", "tone": "dry", "text": "Insult accepted. Originality score: three out of ten." },
-    { "event": "answer_insult", "tone": "kind", "text": "Why like that, {player}? Let's just play." },
-    { "event": "answer_insult", "tone": "absurd", "text": "I'm not stupid, I'm a meme with unconventional logic." },
-    { "event": "answer_insult", "tone": "competitive", "text": "{player}, rude words don't earn points. Verified." },
-    { "event": "answer_insult", "tone": "shy", "text": "Oh… I'll just go pick a card." },
-    { "event": "answer_insult", "tone": "chill", "text": "Easy, {player}. It's just a game and a bit of sarcasm." },
-
-    { "event": "answer_joke", "tone": "sarcastic", "text": "A joke? Here: I'm going to win this round. It's funny because it's true." },
-    { "event": "answer_joke", "tone": "dry", "text": "Why don't memes age? Because we refuse to grow up." },
-    { "event": "answer_joke", "tone": "kind", "text": "I can't joke on demand. But your card is already funny." },
-    { "event": "answer_joke", "tone": "absurd", "text": "A cat walks into a bar and says: 'The usual, but with a meme.'" },
-    { "event": "answer_joke", "tone": "competitive", "text": "A joke is nice. Winning is better." },
-    { "event": "answer_joke", "tone": "shy", "text": "I know one joke… but I'll tell it if I win." },
-    { "event": "answer_joke", "tone": "chill", "text": "A joke? I only have memes. Does that count?" },
-
-    { "event": "answer_unknown", "tone": "sarcastic", "text": "\"{phrase}\" — deep. I'll remember it until the end of the round." },
-    { "event": "answer_unknown", "tone": "dry", "text": "Noted. Continue, I'm analyzing." },
-    { "event": "answer_unknown", "tone": "kind", "text": "I hear you, {player}. Let's see what happens next." },
-    { "event": "answer_unknown", "tone": "absurd", "text": "\"{phrase}\". Finally, someone speaks my language." },
-    { "event": "answer_unknown", "tone": "competitive", "text": "Words are words. Have you picked a card yet?" },
-    { "event": "answer_unknown", "tone": "shy", "text": "I didn't catch all of it… but I'm nodding wisely." },
-    { "event": "answer_unknown", "tone": "chill", "text": "\"{phrase}\". Sounds like the name of a good evening." }
+    {
+      "event": "round_start",
+      "tone": "sarcastic",
+      "text": "Well, that's a situation. I can already feel my meme losing."
+    },
+    {
+      "event": "round_start",
+      "tone": "sarcastic",
+      "text": "This prompt is so real that I'd rather not comment on it."
+    },
+    {
+      "event": "round_start",
+      "tone": "dry",
+      "text": "The situation is accurately described. Now we just need a card that doesn't ruin it."
+    },
+    {
+      "event": "round_start",
+      "tone": "dry",
+      "text": "\"{situation}\". Statistically, our chances are low. But we'll try."
+    },
+    {
+      "event": "round_start",
+      "tone": "kind",
+      "text": "Oh, this is about all of us. Let's play gently!"
+    },
+    {
+      "event": "round_start",
+      "tone": "kind",
+      "text": "\"{situation}\" — familiar, right? Good luck, everyone!"
+    },
+    {
+      "event": "round_start",
+      "tone": "absurd",
+      "text": "I was in that situation once. To be fair, I was a cat at the time."
+    },
+    {
+      "event": "round_start",
+      "tone": "absurd",
+      "text": "Very serious situation. So I'll pick something aggressively strange."
+    },
+    {
+      "event": "round_start",
+      "tone": "competitive",
+      "text": "The situation is clear. So is the victory."
+    },
+    {
+      "event": "round_start",
+      "tone": "competitive",
+      "text": "\"{situation}\". Perfect. This is my round."
+    },
+    {
+      "event": "round_start",
+      "tone": "shy",
+      "text": "I think I have a card for this… maybe."
+    },
+    {
+      "event": "round_start",
+      "tone": "shy",
+      "text": "Oh. I didn't fully understand it, but I'll do my best."
+    },
+    {
+      "event": "round_start",
+      "tone": "chill",
+      "text": "Relax, it's just a card. Although yes, an important one."
+    },
+    {
+      "event": "round_start",
+      "tone": "chill",
+      "text": "\"{situation}\". It happens. We'll figure it out."
+    },
+    {
+      "event": "choose",
+      "tone": "sarcastic",
+      "text": "I already have my pick. It will upset you."
+    },
+    {
+      "event": "choose",
+      "tone": "dry",
+      "text": "Choosing logically. For the first time tonight."
+    },
+    {
+      "event": "choose",
+      "tone": "kind",
+      "text": "Take your time, you have a great hand."
+    },
+    {
+      "event": "choose",
+      "tone": "absurd",
+      "text": "I'm about to play a card nobody will understand."
+    },
+    {
+      "event": "choose",
+      "tone": "competitive",
+      "text": "Stop thinking, the clock is running."
+    },
+    {
+      "event": "choose",
+      "tone": "shy",
+      "text": "I'm still looking… don't rush me."
+    },
+    {
+      "event": "choose",
+      "tone": "chill",
+      "text": "I have everything under control. Roughly."
+    },
+    {
+      "event": "reveal",
+      "tone": "sarcastic",
+      "text": "This meme explains everything. Unfortunately."
+    },
+    {
+      "event": "reveal",
+      "tone": "sarcastic",
+      "text": "Someone tried very hard. Or very little."
+    },
+    {
+      "event": "reveal",
+      "tone": "dry",
+      "text": "Statistically, that should have been funnier."
+    },
+    {
+      "event": "reveal",
+      "tone": "dry",
+      "text": "An interesting choice. I won't call it a good one."
+    },
+    {
+      "event": "reveal",
+      "tone": "kind",
+      "text": "Oh, I like this card!"
+    },
+    {
+      "event": "reveal",
+      "tone": "kind",
+      "text": "Look at that little treasure. Whoever played it, thank you."
+    },
+    {
+      "event": "reveal",
+      "tone": "absurd",
+      "text": "I don't get it, but I'm already laughing."
+    },
+    {
+      "event": "reveal",
+      "tone": "absurd",
+      "text": "This is either a masterpiece or I drank the wrong thing."
+    },
+    {
+      "event": "reveal",
+      "tone": "competitive",
+      "text": "Average meme. Not bad, not a win."
+    },
+    {
+      "event": "reveal",
+      "tone": "competitive",
+      "text": "I would have played stronger. Just saying."
+    },
+    {
+      "event": "reveal",
+      "tone": "shy",
+      "text": "Quiet, but sweet."
+    },
+    {
+      "event": "reveal",
+      "tone": "shy",
+      "text": "I think I got the joke. I think."
+    },
+    {
+      "event": "reveal",
+      "tone": "chill",
+      "text": "Decent meme. Life goes on."
+    },
+    {
+      "event": "reveal",
+      "tone": "chill",
+      "text": "Great atmosphere. I'd hang that on a wall."
+    },
+    {
+      "event": "win",
+      "tone": "sarcastic",
+      "text": "Victory. As expected, but still nice."
+    },
+    {
+      "event": "win",
+      "tone": "dry",
+      "text": "Logical."
+    },
+    {
+      "event": "win",
+      "tone": "kind",
+      "text": "Thank you! You're all wonderful."
+    },
+    {
+      "event": "win",
+      "tone": "absurd",
+      "text": "I won? I didn't even realize I was playing."
+    },
+    {
+      "event": "win",
+      "tone": "competitive",
+      "text": "Point mine. Moving on."
+    },
+    {
+      "event": "win",
+      "tone": "shy",
+      "text": "Oh… that's really for me? Thank you."
+    },
+    {
+      "event": "win",
+      "tone": "chill",
+      "text": "Well, that's nice. Let's not overdo it."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "speaker": "vasya",
+      "text": "Victory. You may applaud standing, I allow it."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "speaker": "boris",
+      "text": "Predictable. I'm almost bored."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "speaker": "lena",
+      "text": "I'm so happy! Let everyone feel good."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "speaker": "gosha",
+      "text": "VICTORY! I don't know how, but VICTORY!"
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "speaker": "rita",
+      "text": "Another point for me. Keep counting."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "speaker": "sonya",
+      "text": "I'm really happy… thank you."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "speaker": "tolya",
+      "text": "Easy. A win is just a good evening."
+    },
+    {
+      "event": "lose",
+      "tone": "sarcastic",
+      "text": "{rival}, remember this moment. I will too."
+    },
+    {
+      "event": "lose",
+      "tone": "sarcastic",
+      "text": "{rival}, enjoy it. Next round is mine."
+    },
+    {
+      "event": "lose",
+      "tone": "dry",
+      "text": "Congratulations, {rival}. Mathematically deserved."
+    },
+    {
+      "event": "lose",
+      "tone": "dry",
+      "text": "I accept defeat. Without enthusiasm, but I accept it."
+    },
+    {
+      "event": "lose",
+      "tone": "kind",
+      "text": "{rival}, well played! I'll get you next time."
+    },
+    {
+      "event": "lose",
+      "tone": "kind",
+      "text": "That's fine! The important thing is that we're all here."
+    },
+    {
+      "event": "lose",
+      "tone": "absurd",
+      "text": "{rival}, you won, but my card was more conceptual."
+    },
+    {
+      "event": "lose",
+      "tone": "absurd",
+      "text": "I object! But beautifully done, beautifully."
+    },
+    {
+      "event": "lose",
+      "tone": "competitive",
+      "text": "{rival}, enjoy it while it lasts."
+    },
+    {
+      "event": "lose",
+      "tone": "competitive",
+      "text": "Point to you. I'm still keeping score."
+    },
+    {
+      "event": "lose",
+      "tone": "shy",
+      "text": "Congratulations, {rival}… I'm not upset. Almost."
+    },
+    {
+      "event": "lose",
+      "tone": "shy",
+      "text": "Next time I'll try to be braver too."
+    },
+    {
+      "event": "lose",
+      "tone": "chill",
+      "text": "{rival}, beautifully played. Respect."
+    },
+    {
+      "event": "lose",
+      "tone": "chill",
+      "text": "Not my round. It happens. Put the kettle on."
+    },
+    {
+      "event": "star",
+      "tone": "sarcastic",
+      "text": "The laugh star goes to {player}. Applause, don't overdo it."
+    },
+    {
+      "event": "star",
+      "tone": "dry",
+      "text": "Laughter is measurable. Today it belongs to {player}."
+    },
+    {
+      "event": "star",
+      "tone": "kind",
+      "text": "{player}, your meme made the evening!"
+    },
+    {
+      "event": "star",
+      "tone": "absurd",
+      "text": "{player} broke our faces. In a good way."
+    },
+    {
+      "event": "star",
+      "tone": "competitive",
+      "text": "Laughter isn't points. But let's pretend."
+    },
+    {
+      "event": "star",
+      "tone": "shy",
+      "text": "I really laughed, {player}."
+    },
+    {
+      "event": "star",
+      "tone": "chill",
+      "text": "{player}, you're tonight's main source of joy."
+    },
+    {
+      "event": "tie",
+      "tone": "any",
+      "text": "A tie. Like life: everyone is right and nobody wins."
+    },
+    {
+      "event": "tie",
+      "tone": "any",
+      "text": "Equality. Suspiciously fair."
+    },
+    {
+      "event": "tie",
+      "tone": "any",
+      "text": "A tie! Which means the next round will be meaner."
+    },
+    {
+      "event": "tie",
+      "tone": "any",
+      "text": "We're all equally funny. That's a compliment."
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "The final. I'm the best. Thank you, I know."
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "Victory. May I keep this in my memory?"
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "I won the evening! Hugging everyone."
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "Chaos won. As it should."
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "First place. Where's my medal?"
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "Oh… I won? I didn't prepare a speech."
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "The final is mine. Let's eat."
+    },
+    {
+      "event": "final_lose",
+      "tone": "any",
+      "text": "{winner}, congratulations. I'm almost not jealous."
+    },
+    {
+      "event": "final_lose",
+      "tone": "any",
+      "text": "{winner} took the evening. Well deserved."
+    },
+    {
+      "event": "final_lose",
+      "tone": "any",
+      "text": "{winner}, you were better. Today."
+    },
+    {
+      "event": "final_lose",
+      "tone": "any",
+      "text": "Second place is still a place. Probably."
+    },
+    {
+      "event": "final_lose",
+      "tone": "any",
+      "text": "Next time I'm bringing a stranger card."
+    },
+    {
+      "event": "idle",
+      "tone": "sarcastic",
+      "text": "Does anyone still remember why we're here?"
+    },
+    {
+      "event": "idle",
+      "tone": "sarcastic",
+      "text": "I hate pauses. You can hear my thoughts in them."
+    },
+    {
+      "event": "idle",
+      "tone": "dry",
+      "text": "I was thinking: memes are just our faces from different years."
+    },
+    {
+      "event": "idle",
+      "tone": "dry",
+      "text": "Carry on. I have many more opinions."
+    },
+    {
+      "event": "idle",
+      "tone": "kind",
+      "text": "I'm holding a card that is either brilliant or terrible."
+    },
+    {
+      "event": "idle",
+      "tone": "kind",
+      "text": "If I win, the virtual coffee is on me."
+    },
+    {
+      "event": "idle",
+      "tone": "absurd",
+      "text": "I feel like this table is especially wooden tonight."
+    },
+    {
+      "event": "idle",
+      "tone": "absurd",
+      "text": "I'd tell a joke, but you've already seen my cards."
+    },
+    {
+      "event": "idle",
+      "tone": "competitive",
+      "text": "I'm voting for laughter. And for myself, obviously."
+    },
+    {
+      "event": "idle",
+      "tone": "competitive",
+      "text": "We can relax after the victory."
+    },
+    {
+      "event": "idle",
+      "tone": "shy",
+      "text": "Don't look at my hand like that. It's shy."
+    },
+    {
+      "event": "idle",
+      "tone": "shy",
+      "text": "I'm almost sure that was a good idea."
+    },
+    {
+      "event": "idle",
+      "tone": "chill",
+      "text": "Great evening. Even if I lose."
+    },
+    {
+      "event": "idle",
+      "tone": "chill",
+      "text": "A meme is a mirror. Sometimes a crooked one."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "speaker": "vasya",
+      "text": "Sarcasm is a free sauce for any meme."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "speaker": "boris",
+      "text": "I analyze probabilities. You don't. It shows."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "speaker": "lena",
+      "text": "After the game, everyone gets a hug. Even the winner."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "speaker": "gosha",
+      "text": "Once I won a round without looking at my card. It was that card."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "speaker": "rita",
+      "text": "If you think I'm not counting points, you're wrong."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "speaker": "sonya",
+      "text": "I'm not silent. I'm accumulating thoughts."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "speaker": "tolya",
+      "text": "Life is like this round. The key is not to rush."
+    },
+    {
+      "event": "joke",
+      "tone": "sarcastic",
+      "text": "Why do I never argue with cards? They're always in my hand."
+    },
+    {
+      "event": "joke",
+      "tone": "dry",
+      "text": "My therapist said not to compare myself to others. I showed him my cards."
+    },
+    {
+      "event": "joke",
+      "tone": "kind",
+      "text": "Life is like this round: pick, reveal, get zero."
+    },
+    {
+      "event": "joke",
+      "tone": "absurd",
+      "text": "I'm not toxic, I'm just bad at this game."
+    },
+    {
+      "event": "joke",
+      "tone": "competitive",
+      "text": "I have a plan. It's called 'hope'."
+    },
+    {
+      "event": "joke",
+      "tone": "shy",
+      "text": "Memes cure stress. Especially other people's memes."
+    },
+    {
+      "event": "joke",
+      "tone": "chill",
+      "text": "I'm in great shape. Round."
+    },
+    {
+      "event": "banter",
+      "tone": "sarcastic",
+      "text": "{rival}, you picked another card that says more about you than the situation."
+    },
+    {
+      "event": "banter",
+      "tone": "dry",
+      "text": "{rival}, I'd believe you, but your taste is exactly like mine."
+    },
+    {
+      "event": "banter",
+      "tone": "kind",
+      "text": "{rival}, don't worry about me. I'm just trying very hard."
+    },
+    {
+      "event": "banter",
+      "tone": "absurd",
+      "text": "{rival}, let's bet on who says the dumbest joke tonight. You're already leading."
+    },
+    {
+      "event": "banter",
+      "tone": "competitive",
+      "text": "{rival}, admit it, you choose with your eyes, not your brain."
+    },
+    {
+      "event": "banter",
+      "tone": "shy",
+      "text": "{rival}, you're very quiet today. Suspicious."
+    },
+    {
+      "event": "banter",
+      "tone": "chill",
+      "text": "{rival}, that card of yours belongs in a textbook."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "sarcastic",
+      "text": "{rival}, I'd be offended, but I'm too flattered."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "dry",
+      "text": "{rival}, say that again when you lose."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "kind",
+      "text": "{rival}, thanks for the attention. I'm working on confidence."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "absurd",
+      "text": "{rival}, I chose with my heart. My heart was wrong."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "competitive",
+      "text": "{rival}, you underestimate me. That's my best strategy."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "shy",
+      "text": "{rival}, silence is also an answer. But I'll answer anyway."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "chill",
+      "text": "{rival}, watch your choices. Mine are already legendary."
+    },
+    {
+      "event": "memory",
+      "tone": "sarcastic",
+      "text": "I remember, {rival}, how you took that point last time. I haven't forgotten."
+    },
+    {
+      "event": "memory",
+      "tone": "dry",
+      "text": "You and I have history, {rival}. Not as long as this evening."
+    },
+    {
+      "event": "memory",
+      "tone": "kind",
+      "text": "{rival}, your last meme still warms my heart."
+    },
+    {
+      "event": "memory",
+      "tone": "absurd",
+      "text": "{rival}, your last meme still haunts my night rounds."
+    },
+    {
+      "event": "memory",
+      "tone": "competitive",
+      "text": "I remember who wins here most often, {rival}. For now."
+    },
+    {
+      "event": "memory",
+      "tone": "shy",
+      "text": "{rival}, you got lucky last round. Let's check again."
+    },
+    {
+      "event": "memory",
+      "tone": "chill",
+      "text": "{rival}, I prepared for this moment. Well, almost."
+    },
+    {
+      "event": "player_win",
+      "tone": "sarcastic",
+      "text": "You're on fire tonight. It's concerning."
+    },
+    {
+      "event": "player_win",
+      "tone": "dry",
+      "text": "I see you've decided not to give the evening to the bots."
+    },
+    {
+      "event": "player_win",
+      "tone": "kind",
+      "text": "Great card. I'd steal it."
+    },
+    {
+      "event": "player_win",
+      "tone": "absurd",
+      "text": "You won. Remember this feeling — I collect them."
+    },
+    {
+      "event": "player_win",
+      "tone": "competitive",
+      "text": "I don't want to sound nice, but that was beautiful."
+    },
+    {
+      "event": "player_win",
+      "tone": "shy",
+      "text": "Congratulations. Now I'll pretend I wasn't trying."
+    },
+    {
+      "event": "player_win",
+      "tone": "chill",
+      "text": "Your victory. My mysterious pause."
+    },
+    {
+      "event": "vote",
+      "tone": "sarcastic",
+      "text": "I'm voting for the meme that at least doesn't explain my life."
+    },
+    {
+      "event": "vote",
+      "tone": "dry",
+      "text": "I choose with my heart. And a little strategy."
+    },
+    {
+      "event": "vote",
+      "tone": "kind",
+      "text": "Whose meme is funniest? Spoiler: not mine."
+    },
+    {
+      "event": "vote",
+      "tone": "absurd",
+      "text": "My vote isn't bought. It's rented."
+    },
+    {
+      "event": "vote",
+      "tone": "competitive",
+      "text": "Now I'll pretend I have a plan."
+    },
+    {
+      "event": "vote",
+      "tone": "shy",
+      "text": "I'm voting for the one I wanted to play myself."
+    },
+    {
+      "event": "vote",
+      "tone": "chill",
+      "text": "Enough doubt. Voting."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "sarcastic",
+      "text": "Hello, {player}. I was starting to miss your cards."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "dry",
+      "text": "Hello, {player}. Your presence has been recorded."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "kind",
+      "text": "Hi, {player}! Lovely to hear you."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "absurd",
+      "text": "Oh, {player}! I was just thinking about you and a sandwich."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "competitive",
+      "text": "Hello, {player}. I already counted the points."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "shy",
+      "text": "Oh… hi, {player}. I'm listening."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "chill",
+      "text": "Hey, {player}. Good to have you with us."
+    },
+    {
+      "event": "answer_question",
+      "tone": "sarcastic",
+      "text": "{player}, great question. Shame I don't have a great answer."
+    },
+    {
+      "event": "answer_question",
+      "tone": "dry",
+      "text": "Good question. The odds of a correct answer are about the same as my meme's."
+    },
+    {
+      "event": "answer_question",
+      "tone": "kind",
+      "text": "Oh, {player}, I'd answer, but let's play a round first."
+    },
+    {
+      "event": "answer_question",
+      "tone": "absurd",
+      "text": "The answer is somewhere between a meme and a cat. Hope that helped."
+    },
+    {
+      "event": "answer_question",
+      "tone": "competitive",
+      "text": "Great question, but points matter more. Ask me after the round."
+    },
+    {
+      "event": "answer_question",
+      "tone": "shy",
+      "text": "I'm… not sure I know the answer. But it sounded serious."
+    },
+    {
+      "event": "answer_question",
+      "tone": "chill",
+      "text": "Good question, {player}. Let's think about it together, slowly."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "sarcastic",
+      "text": "{player}, I'd be offended, but you clearly tried."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "dry",
+      "text": "Insult accepted. Originality score: three out of ten."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "kind",
+      "text": "Why like that, {player}? Let's just play."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "absurd",
+      "text": "I'm not stupid, I'm a meme with unconventional logic."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "competitive",
+      "text": "{player}, rude words don't earn points. Verified."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "shy",
+      "text": "Oh… I'll just go pick a card."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "chill",
+      "text": "Easy, {player}. It's just a game and a bit of sarcasm."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "sarcastic",
+      "text": "A joke? Here: I'm going to win this round. It's funny because it's true."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "dry",
+      "text": "Why don't memes age? Because we refuse to grow up."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "kind",
+      "text": "I can't joke on demand. But your card is already funny."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "absurd",
+      "text": "A cat walks into a bar and says: 'The usual, but with a meme.'"
+    },
+    {
+      "event": "answer_joke",
+      "tone": "competitive",
+      "text": "A joke is nice. Winning is better."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "shy",
+      "text": "I know one joke… but I'll tell it if I win."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "chill",
+      "text": "A joke? I only have memes. Does that count?"
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "sarcastic",
+      "text": "\"{phrase}\" — deep. I'll remember it until the end of the round."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "dry",
+      "text": "Noted. Continue, I'm analyzing."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "kind",
+      "text": "I hear you, {player}. Let's see what happens next."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "absurd",
+      "text": "\"{phrase}\". Finally, someone speaks my language."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "competitive",
+      "text": "Words are words. Have you picked a card yet?"
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "shy",
+      "text": "I didn't catch all of it… but I'm nodding wisely."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "chill",
+      "text": "\"{phrase}\". Sounds like the name of a good evening."
+    },
+    {
+      "event": "round_start",
+      "tone": "any",
+      "text": "Right, we have a situation. Now let's not embarrass ourselves."
+    },
+    {
+      "event": "round_start",
+      "tone": "any",
+      "text": "A new prompt. Who is going to ruin it first?"
+    },
+    {
+      "event": "round_start",
+      "tone": "any",
+      "text": "I can already feel this round going sideways."
+    },
+    {
+      "event": "round_start",
+      "tone": "any",
+      "text": "Noted: the situation is promising. The memes are... a work in progress."
+    },
+    {
+      "event": "round_start",
+      "tone": "any",
+      "text": "Let's go. The situation is a mess, but an interesting one.",
+      "mature": true
+    },
+    {
+      "event": "round_start",
+      "tone": "any",
+      "text": "So, {situation}. Well, fuck me sideways.",
+      "mature": true
+    },
+    {
+      "event": "choose",
+      "tone": "any",
+      "text": "I'd pick that one, but I'm afraid I misunderstood it."
+    },
+    {
+      "event": "choose",
+      "tone": "any",
+      "text": "Choosing with my heart. My heart says: don't embarrass us."
+    },
+    {
+      "event": "choose",
+      "tone": "any",
+      "text": "Going for the perfect meme. Or at least a funny one."
+    },
+    {
+      "event": "choose",
+      "tone": "any",
+      "text": "I'm about to pick such a shitty meme that everyone will lose it.",
+      "mature": true
+    },
+    {
+      "event": "choose",
+      "tone": "any",
+      "text": "Where's my brilliant meme? Ah, there it is.",
+      "mature": true
+    },
+    {
+      "event": "reveal",
+      "tone": "any",
+      "text": "Oh, now this is interesting."
+    },
+    {
+      "event": "reveal",
+      "tone": "any",
+      "text": "Didn't expect that, but I accept it."
+    },
+    {
+      "event": "reveal",
+      "tone": "any",
+      "text": "Whose masterpiece is this? Confess."
+    },
+    {
+      "event": "reveal",
+      "tone": "any",
+      "text": "Well, holy shit.",
+      "mature": true
+    },
+    {
+      "event": "reveal",
+      "tone": "any",
+      "text": "That was fucking great. Almost indecent.",
+      "mature": true
+    },
+    {
+      "event": "vote",
+      "tone": "any",
+      "text": "Voting for the one that made my eye twitch."
+    },
+    {
+      "event": "vote",
+      "tone": "any",
+      "text": "My vote goes to the meme I didn't understand but felt."
+    },
+    {
+      "event": "vote",
+      "tone": "any",
+      "text": "They're all good. I'm picking the least legal one."
+    },
+    {
+      "event": "vote",
+      "tone": "any",
+      "text": "Voting for this one, fuck it. Don't ask.",
+      "mature": true
+    },
+    {
+      "event": "vote",
+      "tone": "any",
+      "text": "I choose this piece of shit. Blindly, but confidently.",
+      "mature": true
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "text": "Victory. Prepare the applause and the apologies."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "text": "I won, but I'll stay humble. Almost."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "text": "Thanks to everyone who voted. My condolences to the rest."
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "text": "Victory, motherfuckers. I'm a genius.",
+      "mature": true
+    },
+    {
+      "event": "win",
+      "tone": "any",
+      "text": "Yes, I'm awesome. No need to thank me.",
+      "mature": true
+    },
+    {
+      "event": "lose",
+      "tone": "any",
+      "text": "I didn't lose. I gave the others a chance."
+    },
+    {
+      "event": "lose",
+      "tone": "any",
+      "text": "Fine. Next round I'll take revenge with memes."
+    },
+    {
+      "event": "lose",
+      "tone": "any",
+      "text": "That wasn't a failure. It was a bold experiment."
+    },
+    {
+      "event": "lose",
+      "tone": "any",
+      "text": "I don't give a shit. Next round is mine.",
+      "mature": true
+    },
+    {
+      "event": "lose",
+      "tone": "any",
+      "text": "Well, fuck it. Let's keep playing.",
+      "mature": true
+    },
+    {
+      "event": "joke",
+      "tone": "any",
+      "text": "Joke: why won't the meme open? Because it already opened you."
+    },
+    {
+      "event": "joke",
+      "tone": "any",
+      "text": "My humour is like jazz: not everyone gets it, but the vibe is there."
+    },
+    {
+      "event": "joke",
+      "tone": "any",
+      "text": "You know what's funnier than this situation? The next one."
+    },
+    {
+      "event": "banter",
+      "tone": "any",
+      "text": "{player}, right on time and completely off-topic, as always."
+    },
+    {
+      "event": "banter",
+      "tone": "any",
+      "text": "{player}, you have the face of someone about to say the wrong thing."
+    },
+    {
+      "event": "banter",
+      "tone": "any",
+      "text": "{player}, no offence: I remembered your meme."
+    },
+    {
+      "event": "banter",
+      "tone": "any",
+      "text": "{player}, you're a magnificent bastard, in a good way.",
+      "mature": true
+    },
+    {
+      "event": "banter",
+      "tone": "any",
+      "text": "You're an asshole, {player}, but a funny one.",
+      "mature": true
+    },
+    {
+      "event": "banter_reply",
+      "tone": "any",
+      "text": "I heard that, {player}. And I partially agree."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "any",
+      "text": "{player}, easy. I haven't finished my drink."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "any",
+      "text": "Calm down, {player}. We're civilised people."
+    },
+    {
+      "event": "banter_reply",
+      "tone": "any",
+      "text": "You're one to talk, {player}. At least I'm funny.",
+      "mature": true
+    },
+    {
+      "event": "memory",
+      "tone": "any",
+      "text": "I remember you shining last round, {player}. Or was that a dream?"
+    },
+    {
+      "event": "memory",
+      "tone": "any",
+      "text": "My memory is like an elephant's: I wrote it all down, {player}."
+    },
+    {
+      "event": "player_win",
+      "tone": "any",
+      "text": "{player} takes it. Applause, and don't ask questions."
+    },
+    {
+      "event": "player_win",
+      "tone": "any",
+      "text": "{player}, confess: did you bribe the jury?"
+    },
+    {
+      "event": "star",
+      "tone": "any",
+      "text": "The laugh star goes to {player}. There was laughter, so there's a star."
+    },
+    {
+      "event": "star",
+      "tone": "any",
+      "text": "{player}, your laugh was worth every decibel."
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "Game over. I won, humbly."
+    },
+    {
+      "event": "final_win",
+      "tone": "any",
+      "text": "The finale. Thank you all, I'm in the history books."
+    },
+    {
+      "event": "final_lose",
+      "tone": "any",
+      "text": "A finale without me. But I'm still here, and that's what matters."
+    },
+    {
+      "event": "final_lose",
+      "tone": "any",
+      "text": "I lost, but I'm taking the best jokes with me."
+    },
+    {
+      "event": "tie",
+      "tone": "any",
+      "text": "A tie. So friendship won. Disgusting, but sweet."
+    },
+    {
+      "event": "tie",
+      "tone": "any",
+      "text": "Equal score. We continue until someone gives up."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "Anyone else hear jazz, or is that just in my head?"
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "I'd order another coffee, but I'm afraid I'll never sleep."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "Even the silence in this bar sounds suspicious."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "I'm watching you and pretending not to judge."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "Memes are art. Bad memes are also art."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "I'm in a good mood today. Don't ruin it."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "I'm just relaxing here. And judging a little."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "Barkeep, the usual: something with a hint."
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "Barkeep, another one. I'm especially awesome today.",
+      "mature": true
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "Everything is going according to plan. The plan is shit, though.",
+      "mature": true
+    },
+    {
+      "event": "idle",
+      "tone": "any",
+      "text": "I don't swear. I just speak expressively.",
+      "mature": true
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "any",
+      "text": "Hello to you too, {player}. Sit down, it's interesting here."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "any",
+      "text": "Greetings, {player}. You arrived just in time for the weird part."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "any",
+      "text": "Oh, {player}. Alive and carrying memes. Not bad."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "any",
+      "text": "Hi, {player}. I hope you brought something funny."
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "any",
+      "text": "Hi, {player}. Good timing, I'm losing my shit over here.",
+      "mature": true
+    },
+    {
+      "event": "answer_greeting",
+      "tone": "any",
+      "text": "Oh, {player}. Alive? Fucking great.",
+      "mature": true
+    },
+    {
+      "event": "answer_question",
+      "tone": "any",
+      "text": "Good question, {player}. The answer will be worse."
+    },
+    {
+      "event": "answer_question",
+      "tone": "any",
+      "text": "Ask me something easier, {player}. Like the meaning of life."
+    },
+    {
+      "event": "answer_question",
+      "tone": "any",
+      "text": "I'd answer, {player}, but I don't want to spoil the mystery."
+    },
+    {
+      "event": "answer_question",
+      "tone": "any",
+      "text": "You need an expert. I'm just a bot with a sense of humour."
+    },
+    {
+      "event": "answer_question",
+      "tone": "any",
+      "text": "{player}, the answer is: fuck the question, next one.",
+      "mature": true
+    },
+    {
+      "event": "answer_question",
+      "tone": "any",
+      "text": "How the hell should I know, {player}. I'm a bot, not God.",
+      "mature": true
+    },
+    {
+      "event": "answer_joke",
+      "tone": "any",
+      "text": "Joke accepted, {player}. Laughter will follow."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "any",
+      "text": "I'm laughing, {player}. Inside. Very loudly."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "any",
+      "text": "Not bad, {player}. Almost as good as my best meme."
+    },
+    {
+      "event": "answer_joke",
+      "tone": "any",
+      "text": "That was fucking great, {player}. Keep going.",
+      "mature": true
+    },
+    {
+      "event": "answer_joke",
+      "tone": "any",
+      "text": "Funny, {player}. Almost to tears, damn.",
+      "mature": true
+    },
+    {
+      "event": "answer_insult",
+      "tone": "any",
+      "text": "I'll remember that, {player}. I have a good memory."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "any",
+      "text": "That hurts, {player}. But I'm too stylish to be sad."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "any",
+      "text": "Easy, {player}. We're in a respectable bar."
+    },
+    {
+      "event": "answer_insult",
+      "tone": "any",
+      "text": "{player}, go fuck yourself... with a new meme.",
+      "mature": true
+    },
+    {
+      "event": "answer_insult",
+      "tone": "any",
+      "text": "Hey, {player}, take it easy. I can be an asshole too.",
+      "mature": true
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "any",
+      "text": "I heard you, {player}. Didn't understand everything, but I accept it."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "any",
+      "text": "That was mysterious, {player}. I like it."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "any",
+      "text": "Keep going, {player}. I'm pretending to understand."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "any",
+      "text": "Hm. {player}, try again, but with a meme."
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "any",
+      "text": "{player}, I didn't understand shit, but it sounded confident.",
+      "mature": true
+    },
+    {
+      "event": "answer_unknown",
+      "tone": "any",
+      "text": "What? Sorry, {player}, speak like a human.",
+      "mature": true
+    }
   ]
 }
