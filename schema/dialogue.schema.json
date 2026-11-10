@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.invalid/meme-laugh-language-packs/dialogue.schema.json",
+  "title": "Meme Laugh NPC dialogue pack",
+  "type": "object",
+  "required": ["code", "name", "formatVersion", "strings", "names", "lines"],
+  "additionalProperties": false,
+  "properties": {
+    "code": { "type": "string", "pattern": "^[a-z]{2}$" },
+    "name": { "type": "string", "minLength": 1 },
+    "formatVersion": { "type": "integer", "const": 1 },
+    "strings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "value"],
+        "additionalProperties": false,
+        "properties": {
+          "key": { "type": "string", "minLength": 1 },
+          "value": { "type": "string" }
+        }
+      }
+    },
+    "names": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "title": { "type": "string" }
+        }
+      }
+    },
+    "lines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["event", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "event": { "type": "string", "minLength": 1 },
+          "tone": { "type": "string" },
+          "speaker": { "type": "string" },
+          "text": { "type": "string", "minLength": 1 },
+          "weight": { "type": "integer", "minimum": 1 },
+          "mature": {
+            "type": "boolean",
+            "description": "Adult-only line. The game ignores it while Settings -> NPC -> Profanity is off. Older game versions ignore the field entirely and may show the line."
+          }
+        }
+      }
+    }
+  }
+}

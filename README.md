@@ -1,30 +1,34 @@
 # Meme Laugh — Language Packs
 
-Public language-content repository for **Meme Laugh**. It hosts the UI strings, NPC dialogue
-packs, and (optionally) Vosk speech-recognition models that the game downloads when a player
-picks a language.
+Public language-content repository for **Meme Laugh**. It hosts the UI strings and NPC
+dialogue packs that the game downloads when a player picks a language.
 
 The base game always ships with **English** built in. Nothing is required to play in English,
-and the game works offline.
+and the game works offline. Speech recognition is not part of this repository: the game uses a
+single multilingual **Whisper small** model (~487 MB), which is installed separately in the
+player's user folder by the game itself. Vosk remains only as an emergency fallback inside the
+game and is never offered through this catalogue.
 
 ## Contents
 
 ```
-catalog.json                 The catalogue the game reads
-schema/catalog.schema.json   JSON Schema for catalog.json
-packs/en/                    English source pack (also embedded in the game)
-packs/ru/                    Russian source pack
-  ui.json                    UI strings: { formatVersion, language, strings[] }
-  dialogue.json              NPC dialogue, unchanged from StreamingAssets/Npc/Lang
-  pack.json                  Human-readable pack metadata
-  licenses.json              Licence information for every component
-tools/validate_catalog.py    Schema + consistency checks (CI)
-tools/build_release.py       Builds versioned ZIPs, hashes, and updates catalog.json
-.github/workflows/           validate.yml and release.yml
+catalog.json                  The catalogue the game reads
+schema/catalog.schema.json    JSON Schema for catalog.json
+schema/dialogue.schema.json   JSON Schema for packs/<code>/dialogue.json
+packs/en/                     English source pack (also embedded in the game)
+packs/ru/                     Russian source pack
+  ui.json                     UI strings: { formatVersion, language, strings[] }
+  dialogue.json               NPC dialogue: 278 lines, 21 event groups
+  pack.json                   Human-readable pack metadata
+  licenses.json               Licence information for every component
+tools/validate_catalog.py     Schema + consistency checks (CI)
+tools/build_release.py        Builds versioned ZIPs, hashes, and updates catalog.json
+.github/workflows/            validate.yml and release.yml
 ```
 
-Large files (release ZIPs, Vosk models) are **never committed**. They are attached to GitHub
-Releases and referenced from `catalog.json` by URL + SHA-256 + size.
+Only release ZIPs are large files. They are **never committed**: the release workflow attaches
+them to GitHub Releases and `catalog.json` references them by URL + SHA-256 + size. No speech
+models (Whisper or Vosk) are stored or downloaded through this repository.
 
 ## Catalogue format
 
@@ -46,13 +50,10 @@ Every component has `id`, `kind`, `language`, `version`, `url`, `sha256`, `sizeB
 
 Supported component kinds:
 
-| kind            | Purpose                                            |
-|-----------------|----------------------------------------------------|
-| `ui`            | Interface strings                                  |
-| `dialogue`      | NPC dialogue lines                                 |
-| `stt-model`     | Vosk recognition model for one language            |
-| `stt-runtime`   | Shared Vosk native runtime (one per platform)      |
-| `tts-voice`     | Reserved for a future TTS provider                 |
+| kind       | Purpose               |
+|------------|-----------------------|
+| `ui`       | Interface strings     |
+| `dialogue` | NPC dialogue lines    |
 
 Supported language codes follow `Loc.Languages` in the game:
 
@@ -61,6 +62,42 @@ Supported language codes follow `Loc.Languages` in the game:
 Only English and Russian are complete today. Other languages are listed with
 `"status": "missing"` and no components; adding one does **not** require a game update.
 When a language pack is missing, the game falls back to English.
+
+## Dialogue format
+
+`dialogue.json` is a versioned, self-contained pack:
+
+```json
+{
+  "code": "ru",
+  "name": "Русский",
+  "formatVersion": 1,
+  "strings": [ { "key": "...", "value": "..." } ],
+  "names": [ { "id": "vasya", "name": "Вася", "title": "..." } ],
+  "lines": [
+    { "event": "round_start", "tone": "sarcastic", "text": "...", "weight": 1 },
+    { "event": "joke", "tone": "absurd", "speaker": "gosha", "text": "...", "mature": true }
+  ]
+}
+```
+
+Line fields:
+
+| field     | required | meaning |
+|-----------|----------|---------|
+| `event`   | yes      | Event group key, for example `round_start`, `win`, `banter` |
+| `text`    | yes      | The spoken line; keep placeholders such as `{situation}` |
+| `tone`    | no       | Personality tone filter (`sarcastic`, `dry`, `kind`, ...) |
+| `speaker` | no       | Restrict the line to one NPC profile id |
+| `weight`  | no       | Positive selection weight, default `1` |
+| `mature`  | no       | Adult-only line; see below |
+
+`mature: true` marks strong language. The game shows such lines only when
+**Settings → NPC → Profanity** is enabled. Older game versions ignore the field entirely and
+may display the line. Omit `mature` for normal lines.
+
+English and Russian must keep the same event groups and line counts. The validator enforces
+278 lines and 21 event groups for both, and checks that the event sets match.
 
 ## Publishing a new pack version
 
@@ -72,19 +109,20 @@ When a language pack is missing, the game falls back to English.
    ```
 
 3. Commit and push to `main`.
-4. Tag the release with a `lang-vX.Y.Z` tag, for example:
+4. Tag the release with a new `lang-vX.Y.Z` tag. Never reuse an existing tag: players already
+   have the old hashes.
 
    ```bash
-   git tag lang-v2026.11.1
-   git push origin lang-v2026.11.1
+   git tag lang-v2026.11.2
+   git push origin lang-v2026.11.2
    ```
 
 `.github/workflows/release.yml` then:
 
-- builds one ZIP per download component (`<code>-<kind>-v<version>.zip`);
+- builds one ZIP per component (`<code>-<kind>-v<version>.zip`);
 - computes SHA-256 and size;
 - uploads the ZIPs to the GitHub Release;
-- rewrites `catalog.json` with the release URLs and hashes;
+- rewrites `catalog.json` with the new release URLs and hashes;
 - commits the updated `catalog.json` back to `main`.
 
 Players receive updated components on the next launch: the game compares versions and
@@ -120,12 +158,13 @@ untouched parts fall back to English.
 ## Local release build
 
 ```bash
-python tools/build_release.py --tag lang-v2026.11.1 \
-  --repo your-org/meme-laugh-language-packs
+python tools/build_release.py --tag lang-v2026.11.2 \
+  --repo tavryxstudio/meme-laugh-language-packs
 ```
 
 The script writes ZIPs to `dist/` and updates `catalog.json` in place. Upload `dist/*` to the
-GitHub Release manually if you are not using the workflow.
+GitHub Release manually if you are not using the workflow. The builder normalizes line endings
+and ZIP metadata, so hashes are identical on Windows and Linux.
 
 ## How the game consumes this repository
 
@@ -138,10 +177,12 @@ Installed files live in:
 
 ```
 %USERPROFILE%\AppData\LocalLow\Meme & Co.\Meme Laugh\LanguagePacks\
-  <language>/<kind>/...
-  _engines/stt-runtime/...
+  <language>/ui/...
+  <language>/dialogue/...
   installed.json
 ```
+
+Speech models are stored separately and are not managed by the language catalogue.
 
 ## Publishing options
 
@@ -172,5 +213,4 @@ configuration change, not a rewrite.
 ## Licences
 
 The language packs in this repository are released under **CC0-1.0** unless a file states
-otherwise. Vosk and its models are **Apache-2.0**. See `packs/<code>/licenses.json` and
-`LICENSE`.
+otherwise. See `packs/<code>/licenses.json` and `LICENSE`.

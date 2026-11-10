@@ -46,7 +46,7 @@
         "id": { "type": "string", "minLength": 1 },
         "kind": {
           "type": "string",
-          "enum": ["ui", "dialogue", "stt-model", "stt-runtime", "tts-voice"]
+          "enum": ["ui", "dialogue"]
         },
         "language": { "type": "string", "pattern": "^(any|[a-z]{2})$" },
         "version": { "type": "integer", "minimum": 1 },

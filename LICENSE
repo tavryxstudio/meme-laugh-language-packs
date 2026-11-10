@@ -11,10 +11,4 @@ neighbouring rights to this work.
 You should have received a copy of the legal code along with this work. If not, see:
 https://creativecommons.org/publicdomain/zero/1.0/legalcode
 
-Third-party components remain under their own licences:
-
-- Vosk and Vosk models: Apache License 2.0
-  https://github.com/alphacep/vosk-api/blob/master/COPYING
-- Model downloads: https://alphacephei.com/vosk/models
-
 SPDX-License-Identifier: CC0-1.0

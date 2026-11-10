@@ -15,4 +15,7 @@ Translation rules:
    missing keys fall back to English.
 3. Keep the dialogue format (`event`, `tone`, `speaker`, `text`, `weight`) unchanged,
    including `{situation}` and other placeholders.
-4. Update `pack.json`, `licenses.json`, and the language entry in `catalog.json`.
+4. Add `"mature": true` only to adult-only lines. The game hides them unless
+   **Settings → NPC → Profanity** is enabled. Older game versions ignore the field.
+5. English and Russian must keep 278 lines, 21 event groups and the same event set.
+6. Update `pack.json`, `licenses.json`, and the language entry in `catalog.json`.

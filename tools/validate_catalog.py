@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Validate catalog.json and the pack sources.
+"""Validate catalog.json, UI packs and dialogue packs.
 
 Checks:
   * catalog.json against schema/catalog.schema.json (when jsonschema is installed);
-  * unique component ids across languages and engines;
+  * unique component ids across languages;
   * every declared language code is supported by the game;
   * source files referenced by non-builtIn packs exist;
   * non-builtIn download components have url, sha256 and sizeBytes;
   * dependencies point at known component ids;
-  * minGameVersion values are well formed.
+  * minGameVersion values are well formed;
+  * dialogue.json against schema/dialogue.schema.json, including the optional
+    `mature` flag;
+  * English and Russian dialogue packs keep the same event set and at least the
+    expected number of lines.
 
 Exit code 0 = valid, 1 = invalid. Suitable for CI.
 """
@@ -22,18 +26,22 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "catalog.json")
 SCHEMA = os.path.join(ROOT, "schema", "catalog.schema.json")
+DIALOGUE_SCHEMA = os.path.join(ROOT, "schema", "dialogue.schema.json")
 PACKS = os.path.join(ROOT, "packs")
 
 SUPPORTED_LANGUAGES = {
     "en", "ru", "uk", "de", "fr", "es", "it", "pt", "pl", "tr", "cs", "nl"
 }
-COMPONENT_KINDS = {"ui", "dialogue", "stt-model", "stt-runtime", "tts-voice"}
+COMPONENT_KINDS = {"ui", "dialogue"}
 SEMVER = re.compile(r"^\d+\.\d+(\.\d+)?$")
 SHA256 = re.compile(r"^[0-9a-fA-F]{64}$")
 KIND_FILE = {"ui": "ui.json", "dialogue": "dialogue.json"}
+EXPECTED_LINES = {"en": 278, "ru": 278}
+EXPECTED_EVENTS = 21
 
 errors: list[str] = []
 warnings: list[str] = []
+dialogue_events: dict[str, set[str]] = {}
 
 
 def fail(message: str) -> None:
@@ -58,6 +66,54 @@ def check_schema(catalog: dict) -> None:
         fail(f"schema: {where}: {error.message}")
 
 
+def check_dialogue(code: str, path: str) -> set[str]:
+    try:
+        data = load_json(path)
+    except Exception as exc:  # noqa: BLE001
+        fail(f"packs/{code}/dialogue.json is not valid JSON: {exc}")
+        return set()
+
+    try:
+        import jsonschema  # type: ignore
+        schema = load_json(DIALOGUE_SCHEMA)
+        validator = jsonschema.Draft7Validator(schema)
+        for error in sorted(validator.iter_errors(data), key=lambda e: list(e.path)):
+            where = "/".join(str(p) for p in error.path) or "<root>"
+            fail(f"dialogue {code}: {where}: {error.message}")
+    except ImportError:
+        pass
+
+    lines = data.get("lines")
+    if not isinstance(lines, list):
+        fail(f"packs/{code}/dialogue.json: lines must be an array")
+        return set()
+
+    events: set[str] = set()
+    for index, line in enumerate(lines):
+        if not isinstance(line, dict):
+            fail(f"packs/{code}/dialogue.json: line {index} is not an object")
+            continue
+        event = line.get("event")
+        text = line.get("text")
+        if not isinstance(event, str) or not event:
+            fail(f"packs/{code}/dialogue.json: line {index} has no event")
+        else:
+            events.add(event)
+        if not isinstance(text, str) or not text:
+            fail(f"packs/{code}/dialogue.json: line {index} has no text")
+        if "mature" in line and not isinstance(line["mature"], bool):
+            fail(f"packs/{code}/dialogue.json: line {index} mature must be boolean")
+
+    expected_lines = EXPECTED_LINES.get(code)
+    if expected_lines is not None and len(lines) < expected_lines:
+        fail(f"packs/{code}/dialogue.json: expected at least {expected_lines} lines, got {len(lines)}")
+    if code in EXPECTED_LINES and len(events) != EXPECTED_EVENTS:
+        fail(f"packs/{code}/dialogue.json: expected {EXPECTED_EVENTS} event groups, got {len(events)}")
+
+    dialogue_events[code] = events
+    return events
+
+
 def check_language(lang: dict) -> None:
     code = lang.get("code", "")
     if code not in SUPPORTED_LANGUAGES:
@@ -73,6 +129,10 @@ def check_language(lang: dict) -> None:
         for name in ("ui.json", "dialogue.json", "pack.json", "licenses.json"):
             if not os.path.isfile(os.path.join(pack_dir, name)):
                 fail(f"packs/{code}/{name}: required file is missing")
+
+    dialogue_path = os.path.join(pack_dir, "dialogue.json")
+    if os.path.isfile(dialogue_path):
+        check_dialogue(code, dialogue_path)
 
     for component in lang.get("components", []):
         check_component(component, code)
@@ -144,6 +204,13 @@ def main() -> int:
         check_language(lang)
         for component in lang.get("components", []):
             register(component)
+
+    if "en" in dialogue_events and "ru" in dialogue_events:
+        only_en = sorted(dialogue_events["en"] - dialogue_events["ru"])
+        only_ru = sorted(dialogue_events["ru"] - dialogue_events["en"])
+        if only_en or only_ru:
+            fail("en/ru dialogue event sets differ: only en=" +
+                 repr(only_en) + ", only ru=" + repr(only_ru))
 
     engines = catalog.get("engines", [])
     for engine in engines:

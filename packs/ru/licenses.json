@@ -13,16 +13,5 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
     }
   ],
-  "thirdParty": [
-    {
-      "id": "vosk.runtime.win64",
-      "license": "Apache-2.0",
-      "url": "https://github.com/alphacep/vosk-api/blob/master/COPYING"
-    },
-    {
-      "id": "vosk.ru.small",
-      "license": "Apache-2.0",
-      "url": "https://alphacephei.com/vosk/models"
-    }
-  ]
+  "thirdParty": []
 }

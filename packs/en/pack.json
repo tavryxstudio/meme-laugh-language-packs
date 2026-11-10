@@ -2,17 +2,17 @@
   "formatVersion": 1,
   "language": "en",
   "name": "English",
-  "version": 1,
+  "version": 2,
   "minGameVersion": "0.1",
   "components": [
     {
       "kind": "ui",
-      "version": 1,
+      "version": 2,
       "file": "ui.json"
     },
     {
       "kind": "dialogue",
-      "version": 1,
+      "version": 2,
       "file": "dialogue.json"
     }
   ]

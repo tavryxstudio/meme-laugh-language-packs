@@ -91,7 +91,8 @@ def main() -> int:
                 continue
             kind = component.get("kind")
             if kind not in KIND_FILE:
-                # stt-model / stt-runtime are hosted externally in this repository.
+                # Only ui/dialogue are hosted here. Whisper is installed by the
+                # game separately and is intentionally absent from this repository.
                 continue
             payload_path = os.path.join(args.packs, code, KIND_FILE[kind])
             if not os.path.isfile(payload_path):

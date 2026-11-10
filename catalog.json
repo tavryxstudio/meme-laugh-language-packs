@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "2026.11.1",
+  "catalogVersion": "2026.11.2",
   "minGameVersion": "0.1",
   "languages": [
     {
@@ -13,9 +13,9 @@
           "id": "ru.ui",
           "kind": "ui",
           "language": "ru",
-          "version": 1,
+          "version": 2,
           "builtIn": false,
-          "url": "https://github.com/tavryxstudio/meme-laugh-language-packs/releases/download/lang-v2026.11.1/ru-ui-v1.zip",
+          "url": "https://github.com/tavryxstudio/meme-laugh-language-packs/releases/download/lang-v2026.11.2/ru-ui-v2.zip",
           "sha256": "6bd2bac82337e475d9b96931b66bf3146271996820879401723eb1e4c04c9726",
           "sizeBytes": 8203,
           "minGameVersion": "0.1",
@@ -28,9 +28,9 @@
           "id": "ru.dialogue",
           "kind": "dialogue",
           "language": "ru",
-          "version": 1,
+          "version": 2,
           "builtIn": false,
-          "url": "https://github.com/tavryxstudio/meme-laugh-language-packs/releases/download/lang-v2026.11.1/ru-dialogue-v1.zip",
+          "url": "https://github.com/tavryxstudio/meme-laugh-language-packs/releases/download/lang-v2026.11.2/ru-dialogue-v2.zip",
           "sha256": "0fe47984381e602a90b87569c31b23e533160196ddd2363164f9558057941ca6",
           "sizeBytes": 8808,
           "minGameVersion": "0.1",
@@ -38,24 +38,6 @@
           "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
           "dependencies": [],
           "installSubfolder": "dialogue"
-        },
-        {
-          "id": "vosk.ru.small",
-          "kind": "stt-model",
-          "language": "ru",
-          "version": 1,
-          "builtIn": false,
-          "optional": true,
-          "url": "https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip",
-          "sha256": "961d5ff98a17f4aa6de69864d0aa71fa5bac682301d2b5d17a3f24c5c99a46d4",
-          "sizeBytes": 46236750,
-          "minGameVersion": "0.1",
-          "license": "Apache-2.0",
-          "licenseUrl": "https://alphacephei.com/vosk/models",
-          "dependencies": [
-            "vosk.runtime.win64"
-          ],
-          "installSubfolder": "stt-model"
         }
       ]
     },
@@ -69,7 +51,7 @@
           "id": "en.ui",
           "kind": "ui",
           "language": "en",
-          "version": 1,
+          "version": 2,
           "builtIn": true,
           "url": "",
           "sha256": "",
@@ -84,7 +66,7 @@
           "id": "en.dialogue",
           "kind": "dialogue",
           "language": "en",
-          "version": 1,
+          "version": 2,
           "builtIn": true,
           "url": "",
           "sha256": "",
@@ -94,24 +76,6 @@
           "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
           "dependencies": [],
           "installSubfolder": "dialogue"
-        },
-        {
-          "id": "vosk.en.small",
-          "kind": "stt-model",
-          "language": "en",
-          "version": 1,
-          "builtIn": false,
-          "optional": true,
-          "url": "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip",
-          "sha256": "30f26242c4eb449f948e42cb302dd7a686cb29a3423a8367f99ff41780942498",
-          "sizeBytes": 41205931,
-          "minGameVersion": "0.1",
-          "license": "Apache-2.0",
-          "licenseUrl": "https://alphacephei.com/vosk/models",
-          "dependencies": [
-            "vosk.runtime.win64"
-          ],
-          "installSubfolder": "stt-model"
         }
       ]
     },
@@ -186,22 +150,5 @@
       "components": []
     }
   ],
-  "engines": [
-    {
-      "id": "vosk.runtime.win64",
-      "kind": "stt-runtime",
-      "language": "any",
-      "version": 1,
-      "builtIn": false,
-      "optional": true,
-      "url": "https://github.com/alphacep/vosk-api/releases/download/v0.3.45/vosk-win64-0.3.45.zip",
-      "sha256": "f1dcc9cca460630f81ea8f71794f69c80bed6556d2a4e6237b5785e1d2dff34b",
-      "sizeBytes": 14882445,
-      "minGameVersion": "0.1",
-      "license": "Apache-2.0",
-      "licenseUrl": "https://github.com/alphacep/vosk-api/blob/master/COPYING",
-      "dependencies": [],
-      "installSubfolder": "stt-runtime"
-    }
-  ]
+  "engines": []
 }
