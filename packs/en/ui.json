@@ -1629,6 +1629,14 @@
     {
       "key": "game.npcHint",
       "value": "T — talk to a bot"
+    },
+    {
+      "key": "npc.stt.whisperLoading",
+      "value": "Loading Whisper…"
+    },
+    {
+      "key": "npc.stt.whisperReady",
+      "value": "Whisper ready · hold {0}"
     }
   ]
 }
